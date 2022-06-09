@@ -12,11 +12,11 @@ from utils.requestsUtils.requestControl import RequestControl
 TestData = CaseData(ConfigHandler.data_path + r'WorkApplyCenter/spu_apply.yaml').case_process()
 
 
-@allure.epic("管理平台端")
-@allure.feature("审核中心")
+@allure.epic("Merit_APP")
+@allure.feature("我的")
 class TestSpuApply:
 
-    @allure.story("商品审核")
+    @allure.story("查询收藏课程列表")
     @pytest.mark.parametrize('in_data', TestData, ids=[i['detail'] for i in TestData])
     def test_spu_apply(self, in_data, case_skip):
         """

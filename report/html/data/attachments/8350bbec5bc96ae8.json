@@ -1,1 +1,0 @@
-"{'code': {'jsonpath': '$.data.nickName', 'type': '==', 'value': '$.nick_name', 'AssertType': 'SQL'}}"

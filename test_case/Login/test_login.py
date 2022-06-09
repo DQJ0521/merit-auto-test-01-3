@@ -12,11 +12,11 @@ from utils.requestsUtils.requestControl import RequestControl
 TestData = CaseData(ConfigHandler.data_path + r'Login/login.yaml').case_process()
 
 
-@allure.epic("Merit平台")
-@allure.feature("登录模块")
+@allure.epic("Merit_APP")
+@allure.feature("APP登录模块")
 class TestLogin:
 
-    @allure.story("正常登录")
+    @allure.story("APP正常登录")
     @pytest.mark.parametrize('in_data', TestData, ids=[i['detail'] for i in TestData])
     def test_login(self, in_data, case_skip):
         """

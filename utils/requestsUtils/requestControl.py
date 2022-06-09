@@ -36,12 +36,12 @@ class RequestControl:
     def case_token(cls, header) -> None:
         try:
             # 判断用例是否依赖token
-            _token = header['token']
+            _token = header['Authorization']
             # 如果依赖则从缓存中读取对应得token信息
             try:
                 # 判断如果没有缓存数据，则直接取用例中的数据
                 cache = Cache(_token).get_cache()
-                header['token'] = cache
+                header['Authorization'] = cache
             except FileNotFoundError:
                 pass
         except KeyError:

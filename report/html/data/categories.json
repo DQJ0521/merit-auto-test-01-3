@@ -1,5 +1,30 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "查询收藏课程列表",
+        "uid" : "be56c71050e75f9f",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654767082333,
+          "stop" : 1654767082437,
+          "duration" : 104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/course/collect/query?current=1&size=10', 'detail': '查询收藏课程列表', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': '$cache{\"work_login_init\"}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': 'spu_apply_list_01', 'dependent_data': [{'dependent_type': 'response', 'jsonpath': '$.data.data.[0].applyId', 'replace_key': '$.data.applyId'}, {'dependent_type': 'request', 'jsonpath': '$.detail', 'replace_key': '$.data.reason'}]}], 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

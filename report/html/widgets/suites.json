@@ -4,9 +4,9 @@
     "uid" : "21ecfdd2cc81cc663a39cf61b775ef84",
     "name" : "test_case.WorkApplyCenter",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
-      "skipped" : 2,
+      "skipped" : 1,
       "passed" : 2,
       "unknown" : 0,
       "total" : 4
@@ -18,9 +18,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     }
   } ]
 }

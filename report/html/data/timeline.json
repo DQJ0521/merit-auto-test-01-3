@@ -4,16 +4,33 @@
   "children" : [ {
     "name" : "DESKTOP-5N1NG0H",
     "children" : [ {
-      "name" : "62300-MainThread",
+      "name" : "70512-MainThread",
       "children" : [ {
-        "name" : "正常登录",
-        "uid" : "3c965bee28376bf9",
-        "parentUid" : "63ffe18779073feaf55eeaab4a8d35f1",
+        "name" : "接口测试demo",
+        "uid" : "97084cc3137fa741",
+        "parentUid" : "ada73f7c4abb69fb6d450ad0793b79d9",
         "status" : "passed",
         "time" : {
-          "start" : 1654752086090,
-          "stop" : 1654752086293,
-          "duration" : 203
+          "start" : 1654767082528,
+          "stop" : 1654767082732,
+          "duration" : 204
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://testapi.merach.com/user/sendSms?version=2.6.3', 'detail': '接口测试demo', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'code': '946390', 'isNewVersion': 1, 'mobile': '17721416811', 'type': 2}, 'dependence_case': None, 'dependence_case_data': None, 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
+      }, {
+        "name" : "正常登录",
+        "uid" : "4bcddb3c5b08b7ef",
+        "parentUid" : "ada73f7c4abb69fb6d450ad0793b79d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654767081830,
+          "stop" : 1654767082081,
+          "duration" : 251
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,14 +40,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/user/login/code?version=2.6.3', 'detail': '正常登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'code': '946390', 'isNewVersion': 1, 'mobile': '17721416811', 'type': 2}, 'dependence_case': False, 'dependence_case_data': None, 'sql': [\"SELECT nick_name FROM user_info WHERE mobile='17721416811'\"], 'assert': {'code': {'jsonpath': '$.data.nickName', 'type': '==', 'value': '$.nick_name', 'AssertType': 'SQL'}}}" ]
       }, {
-        "name" : "test_spu_apply[正常审核商品(测试一个接口依赖多个数据)]",
-        "uid" : "779fda15aa16f96c",
-        "parentUid" : "63ffe18779073feaf55eeaab4a8d35f1",
-        "status" : "skipped",
+        "name" : "正常登录",
+        "uid" : "8e018c39ffb909ae",
+        "parentUid" : "ada73f7c4abb69fb6d450ad0793b79d9",
+        "status" : "passed",
         "time" : {
-          "start" : 1654752086293,
-          "stop" : 1654752086293,
-          "duration" : 0
+          "start" : 1654767082085,
+          "stop" : 1654767082327,
+          "duration" : 242
         },
         "flaky" : false,
         "newFailed" : false,
@@ -38,16 +55,33 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'method': 'PUT', 'is_run': False, 'url': 'https://testapi.merach.com/api/v1/work/spu/approval/pass', 'detail': '正常审核商品(测试一个接口依赖多个数据)', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'token': 'work_login_init'}, 'requestType': 'JSON', 'data': {'applyId': None, 'reason': '审核时间2022-06-09 13:21:25.386707'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': 'spu_apply_list_01', 'dependent_data': [{'dependent_type': 'response', 'jsonpath': '$.data.data.[0].applyId', 'replace_key': '$.data.applyId'}, {'dependent_type': 'request', 'jsonpath': '$.detail', 'replace_key': '$.data.reason'}]}], 'sql': ['select * from test_goods where shop_id = 515'], 'assert': {'code': {'jsonpath': '$.code', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
+        "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/signIn', 'detail': '正常登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'username': '18088888888', 'password': 'admin123'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
+      }, {
+        "name" : "查询收藏课程列表",
+        "uid" : "be56c71050e75f9f",
+        "parentUid" : "ada73f7c4abb69fb6d450ad0793b79d9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654767082333,
+          "stop" : 1654767082437,
+          "duration" : 104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/course/collect/query?current=1&size=10', 'detail': '查询收藏课程列表', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': '$cache{\"work_login_init\"}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': 'spu_apply_list_01', 'dependent_data': [{'dependent_type': 'response', 'jsonpath': '$.data.data.[0].applyId', 'replace_key': '$.data.applyId'}, {'dependent_type': 'request', 'jsonpath': '$.detail', 'replace_key': '$.data.reason'}]}], 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
       }, {
         "name" : "测试多个用例",
-        "uid" : "b0b92df4b23ae5d4",
-        "parentUid" : "63ffe18779073feaf55eeaab4a8d35f1",
+        "uid" : "db604350e3f523f7",
+        "parentUid" : "ada73f7c4abb69fb6d450ad0793b79d9",
         "status" : "passed",
         "time" : {
-          "start" : 1654752086435,
-          "stop" : 1654752086528,
-          "duration" : 93
+          "start" : 1654767082737,
+          "stop" : 1654767082866,
+          "duration" : 129
         },
         "flaky" : false,
         "newFailed" : false,
@@ -58,12 +92,12 @@
         "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://testapi.merach.com/user/sendSms?version=2.6.3', 'detail': '测试多个用例', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'mobile': '13500501591'}, 'dependence_case': None, 'dependence_case_data': None, 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
       }, {
         "name" : "test_work_apply_good_detail[查看商品审核详情]",
-        "uid" : "71368f51e1ea6927",
-        "parentUid" : "63ffe18779073feaf55eeaab4a8d35f1",
+        "uid" : "ce2aa0683ad01476",
+        "parentUid" : "ada73f7c4abb69fb6d450ad0793b79d9",
         "status" : "skipped",
         "time" : {
-          "start" : 1654752086544,
-          "stop" : 1654752086544,
+          "start" : 1654767082868,
+          "stop" : 1654767082868,
           "duration" : 0
         },
         "flaky" : false,
@@ -73,25 +107,8 @@
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'method': 'GET', 'is_run': False, 'url': 'https://testapi.merach.com/api/v1/work/spu/approval/spuApplyDetails/$url_param{good_id}', 'detail': '查看商品审核详情', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'token': 'work_login_init'}, 'requestType': 'JSON', 'data': {'auth': None}, 'dependence_case': True, 'dependence_case_data': [{'case_id': 'spu_apply_list_01', 'dependent_data': [{'dependent_type': 'response', 'jsonpath': '$.data.data.[0].applyId', 'replace_key': '$url_param{good_id}'}]}, {'case_id': 'login_01', 'dependent_data': [{'dependent_type': 'response', 'jsonpath': '$.data.data.[0].token', 'replace_key': '$.data.auth'}]}], 'sql': None, 'assert': {'code': {'jsonpath': '$.code', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
-      }, {
-        "name" : "接口测试demo",
-        "uid" : "57ad5152e5d735f9",
-        "parentUid" : "63ffe18779073feaf55eeaab4a8d35f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1654752086325,
-          "stop" : 1654752086419,
-          "duration" : 94
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://testapi.merach.com/user/sendSms?version=2.6.3', 'detail': '接口测试demo', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'code': '946390', 'isNewVersion': 1, 'mobile': '17721416811', 'type': 2}, 'dependence_case': None, 'dependence_case_data': None, 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
       } ],
-      "uid" : "63ffe18779073feaf55eeaab4a8d35f1"
+      "uid" : "ada73f7c4abb69fb6d450ad0793b79d9"
     } ],
     "uid" : "8e04425b88f5d24afc7abedd9b205fa6"
   } ]

@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time   : 2022-04-07 21:03:43
-
-
-
 import allure
 import pytest
 from config.setting import ConfigHandler
@@ -12,16 +9,16 @@ from utils.assertUtils.assertControl import Assert
 from utils.requestsUtils.requestControl import RequestControl
 
 
-TestData = CaseData(ConfigHandler.data_path + r'WorkApplyCenter/sup_apply_list.yaml').case_process()
+TestData = CaseData(ConfigHandler.data_path + r'Login/login_houtai').case_process()
 
 
-@allure.epic("Merit_APP")
-@allure.feature("登录中心")
-class TestSupApplyList:
+@allure.epic("Merit后台")
+@allure.feature("后台登录模块")
+class TestLogin:
 
-    @allure.story("用户登录")
+    @allure.story("后台正常登录")
     @pytest.mark.parametrize('in_data', TestData, ids=[i['detail'] for i in TestData])
-    def test_sup_apply_list(self, in_data, case_skip):
+    def test_login(self, in_data, case_skip):
         """
         :param :
         :return:
@@ -32,4 +29,4 @@ class TestSupApplyList:
 
 
 if __name__ == '__main__':
-    pytest.main(['test_sup_apply_list.py', '-s', '-W', 'ignore:Module already imported:pytest.PytestWarning'])
+    pytest.main(['test_login_houtai.py', '-s', '-W', 'ignore:Module already imported:pytest.PytestWarning'])

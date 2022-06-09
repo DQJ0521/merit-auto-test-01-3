@@ -2,20 +2,20 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "Merit平台",
+    "name" : "Merit_APP",
     "children" : [ {
-      "name" : "登录模块",
+      "name" : "APP登录模块",
       "children" : [ {
-        "name" : "正常登录",
+        "name" : "APP正常登录",
         "children" : [ {
           "name" : "正常登录",
-          "uid" : "3c965bee28376bf9",
-          "parentUid" : "73a3b0b7e7dd3728207fcc3d967c7fea",
+          "uid" : "4bcddb3c5b08b7ef",
+          "parentUid" : "d9127afc773af92fe4b0c5fb807e4bf4",
           "status" : "passed",
           "time" : {
-            "start" : 1654752086090,
-            "stop" : 1654752086293,
-            "duration" : 203
+            "start" : 1654767081830,
+            "stop" : 1654767082081,
+            "duration" : 251
           },
           "flaky" : false,
           "newFailed" : false,
@@ -25,22 +25,47 @@
           "retriesStatusChange" : false,
           "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/user/login/code?version=2.6.3', 'detail': '正常登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'code': '946390', 'isNewVersion': 1, 'mobile': '17721416811', 'type': 2}, 'dependence_case': False, 'dependence_case_data': None, 'sql': [\"SELECT nick_name FROM user_info WHERE mobile='17721416811'\"], 'assert': {'code': {'jsonpath': '$.data.nickName', 'type': '==', 'value': '$.nick_name', 'AssertType': 'SQL'}}}" ]
         } ],
-        "uid" : "73a3b0b7e7dd3728207fcc3d967c7fea"
+        "uid" : "d9127afc773af92fe4b0c5fb807e4bf4"
       } ],
-      "uid" : "029198a9ccba303fc78043e5002413e2"
+      "uid" : "4e60b199c0ef228221a029a637ed8acd"
+    }, {
+      "name" : "我的",
+      "children" : [ {
+        "name" : "查询收藏课程列表",
+        "children" : [ {
+          "name" : "查询收藏课程列表",
+          "uid" : "be56c71050e75f9f",
+          "parentUid" : "a246753eb90164dfc047efb562fdb454",
+          "status" : "failed",
+          "time" : {
+            "start" : 1654767082333,
+            "stop" : 1654767082437,
+            "duration" : 104
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/course/collect/query?current=1&size=10', 'detail': '查询收藏课程列表', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': '$cache{\"work_login_init\"}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': 'spu_apply_list_01', 'dependent_data': [{'dependent_type': 'response', 'jsonpath': '$.data.data.[0].applyId', 'replace_key': '$.data.applyId'}, {'dependent_type': 'request', 'jsonpath': '$.detail', 'replace_key': '$.data.reason'}]}], 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
+        } ],
+        "uid" : "a246753eb90164dfc047efb562fdb454"
+      } ],
+      "uid" : "a82d477c6b813c2cff3efd75d2289bc0"
     }, {
       "name" : "登录中心",
       "children" : [ {
         "name" : "用户登录",
         "children" : [ {
           "name" : "接口测试demo",
-          "uid" : "57ad5152e5d735f9",
-          "parentUid" : "65deb8e76c64c6aa9ac99282def2abe0",
+          "uid" : "97084cc3137fa741",
+          "parentUid" : "5c4247397b58c92e3d3785f102b9a79d",
           "status" : "passed",
           "time" : {
-            "start" : 1654752086325,
-            "stop" : 1654752086419,
-            "duration" : 94
+            "start" : 1654767082528,
+            "stop" : 1654767082732,
+            "duration" : 204
           },
           "flaky" : false,
           "newFailed" : false,
@@ -51,13 +76,13 @@
           "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://testapi.merach.com/user/sendSms?version=2.6.3', 'detail': '接口测试demo', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'code': '946390', 'isNewVersion': 1, 'mobile': '17721416811', 'type': 2}, 'dependence_case': None, 'dependence_case_data': None, 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
         }, {
           "name" : "测试多个用例",
-          "uid" : "b0b92df4b23ae5d4",
-          "parentUid" : "65deb8e76c64c6aa9ac99282def2abe0",
+          "uid" : "db604350e3f523f7",
+          "parentUid" : "5c4247397b58c92e3d3785f102b9a79d",
           "status" : "passed",
           "time" : {
-            "start" : 1654752086435,
-            "stop" : 1654752086528,
-            "duration" : 93
+            "start" : 1654767082737,
+            "stop" : 1654767082866,
+            "duration" : 129
           },
           "flaky" : false,
           "newFailed" : false,
@@ -67,26 +92,26 @@
           "retriesStatusChange" : false,
           "parameters" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://testapi.merach.com/user/sendSms?version=2.6.3', 'detail': '测试多个用例', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'mobile': '13500501591'}, 'dependence_case': None, 'dependence_case_data': None, 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
         } ],
-        "uid" : "65deb8e76c64c6aa9ac99282def2abe0"
+        "uid" : "5c4247397b58c92e3d3785f102b9a79d"
       } ],
-      "uid" : "24e08aa7f804dd30fe86fc8e630c60b0"
+      "uid" : "b9dda43ab3fc8242b5e6ae1c4c96a555"
     } ],
-    "uid" : "4d945e3c3387bfe6552ee995d1c65d99"
+    "uid" : "66eb9be07cb217c6dd088494f4de97d3"
   }, {
-    "name" : "管理平台端",
+    "name" : "Merit后台",
     "children" : [ {
-      "name" : "审核中心",
+      "name" : "后台登录模块",
       "children" : [ {
-        "name" : "商品审核",
+        "name" : "后台正常登录",
         "children" : [ {
-          "name" : "test_spu_apply[正常审核商品(测试一个接口依赖多个数据)]",
-          "uid" : "779fda15aa16f96c",
-          "parentUid" : "ef05601015b2396977a65961953197f0",
-          "status" : "skipped",
+          "name" : "正常登录",
+          "uid" : "8e018c39ffb909ae",
+          "parentUid" : "3c339fc4adf8ede702f462618c6fc58f",
+          "status" : "passed",
           "time" : {
-            "start" : 1654752086293,
-            "stop" : 1654752086293,
-            "duration" : 0
+            "start" : 1654767082085,
+            "stop" : 1654767082327,
+            "duration" : 242
           },
           "flaky" : false,
           "newFailed" : false,
@@ -94,13 +119,13 @@
           "newBroken" : false,
           "retriesCount" : 0,
           "retriesStatusChange" : false,
-          "parameters" : [ "{'method': 'PUT', 'is_run': False, 'url': 'https://testapi.merach.com/api/v1/work/spu/approval/pass', 'detail': '正常审核商品(测试一个接口依赖多个数据)', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'token': 'work_login_init'}, 'requestType': 'JSON', 'data': {'applyId': None, 'reason': '审核时间2022-06-09 13:21:25.386707'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': 'spu_apply_list_01', 'dependent_data': [{'dependent_type': 'response', 'jsonpath': '$.data.data.[0].applyId', 'replace_key': '$.data.applyId'}, {'dependent_type': 'request', 'jsonpath': '$.detail', 'replace_key': '$.data.reason'}]}], 'sql': ['select * from test_goods where shop_id = 515'], 'assert': {'code': {'jsonpath': '$.code', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
+          "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/signIn', 'detail': '正常登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'username': '18088888888', 'password': 'admin123'}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
         } ],
-        "uid" : "ef05601015b2396977a65961953197f0"
+        "uid" : "3c339fc4adf8ede702f462618c6fc58f"
       } ],
-      "uid" : "56d95f8330b3e2c044b170ede80fb304"
+      "uid" : "8a049afdec580cf8b89fe54002a1464e"
     } ],
-    "uid" : "b684fc73c9420296b863f09ffad18968"
+    "uid" : "6be04cafac00424b3c461b9ef46656ab"
   }, {
     "name" : "电商平台端",
     "children" : [ {
@@ -109,12 +134,12 @@
         "name" : "商品审核详情",
         "children" : [ {
           "name" : "test_work_apply_good_detail[查看商品审核详情]",
-          "uid" : "71368f51e1ea6927",
+          "uid" : "ce2aa0683ad01476",
           "parentUid" : "6e527f69a49d8fc92b2990facd86d352",
           "status" : "skipped",
           "time" : {
-            "start" : 1654752086544,
-            "stop" : 1654752086544,
+            "start" : 1654767082868,
+            "stop" : 1654767082868,
             "duration" : 0
           },
           "flaky" : false,

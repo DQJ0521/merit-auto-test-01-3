@@ -1,12 +1,12 @@
 # 公共参数
 case_common:
-  allureEpic: APP登录
+  allureEpic: 管理后台登录
   allureFeature: 登录模块
   allureStory: 正常登录
 
 login:
     host: ${{host}}
-    url: /user/login/code?version=2.6.3
+    url: /admin/signIn
     method: POST
     detail: 正常登录
     headers:
@@ -16,18 +16,16 @@ login:
     # 是否执行，空或者 true 都会执行
     is_run: true
     data:
-      "code": "946390"
-      "isNewVersion": 1
-      "mobile": "17721416811"
-      "type": 2
+      "username": "18088888888"
+      "password": "admin123"
       # 是否有依赖业务，为空或者false则表示没有
     dependence_case: False
         # 依赖的数据
     dependence_case_data:
     assert:
       code:
-        jsonpath: $.data.nickName
+        jsonpath: $.status
         type: ==
-        value: $.nick_name
-        AssertType: SQL
-    sql: ["SELECT nick_name FROM user_info WHERE mobile='17721416811'"]
+        value: 200
+        AssertType:
+    sql:

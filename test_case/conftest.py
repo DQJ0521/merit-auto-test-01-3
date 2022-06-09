@@ -58,24 +58,45 @@ def write_case_process():
 
 
 @pytest.fixture(scope="session", autouse=True)
-def work_login_init():
+def work_login_init_app():
     """
-    获取平台端的token信息
+    获取APP的token信息
     :return:
     """
     login_yaml = CaseData(ConfigHandler.data_path + 'Login/login.yaml').case_process()[0]
     res = RequestControl().http_request(login_yaml)
     # 将token写入缓存中
     if res[0] is not False:
-        if res[0]['data']['refreshToken']:
-            token = res[0]['data']['refreshToken']
-            Cache('work_login_init').set_caches(token)
-        else:
-            token = res[0]['data']['token']
-            Cache('work_login_init').set_caches(token)
+        # if res[0]['data']['refreshToken']:
+        #     token = res[0]['data']['refreshToken']
+        #     Cache('work_login_init').set_caches(token)
+        # else:
+        token = res[0]['data']['token']
+        Cache('work_login_init').set_caches(token)
         return token
     else:
         WARNING.logger.warning("登录用例设置的是不执行，无法获取到token信息")
+
+
+# @pytest.fixture(scope="session", autouse=True)
+# def work_login_init_houtai():
+#     """
+#     获取管理后台的token信息
+#     :return:
+#     """
+#     login_houtai_yaml = CaseData(ConfigHandler.data_path + 'Login/login_houtai').case_process()[0]
+#     res = RequestControl().http_request(login_houtai_yaml)
+#     # 将token写入缓存中
+#     if res[0] is not False:
+#         if res[0]['data']:
+#             login_data = res[0]['data']
+#             Cache('work_login_init_houtai').set_caches(login_data)
+#         else:
+#             login_data = None
+#             WARNING.logger.warning("无法获取到login_data信息")
+#         return login_data
+#     else:
+#         WARNING.logger.warning("登录用例设置的是不执行，无法获取到token信息")
 
 
 def pytest_collection_modifyitems(items):
