@@ -1,0 +1,22 @@
+INFO     D:\pythonProject\pytest-auto-api2-tag-2.0\logs\info.log:logDecoratorl.py:35 
+=================================================================================
+测试标题: 正常登录
+请求方式: POST
+请求头:   {'Content-Type': 'application/json;charset=UTF-8'}
+请求路径: https://testapi.merach.com/user/login/code?version=2.6.3
+请求内容: {'code': '946390', 'isNewVersion': 1, 'mobile': '17721416811', 'type': 2}
+依赖测试用例: 暂无依赖用例数据
+接口响应内容: {'status': 200, 'message': 'SUCCESS', 'data': {'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJuaWNrbmFtZSI6Iua4qea4qea4qeWNjiIsImlkIjoiMTUxODA0OTIxNjI5NTUzMDQ5NyIsImF2YXRhciI6Imh0dHBzOi8vc3RhdGljLm1lcmFjaC5jb20vYXZhdGFyLzIwMjIwNTE2L0tWT1o3QzFOcURQczlTTEUuanBlZyIsInR5cGUiOjEsImxvZ2luIjoyLCJleHAiOjE2NjI1MjgwODUsInV1aWQiOiIxMDc5YTljOGUwYjU0ZjliYjI3NmExZWM0YjMzNmM2OSJ9.AGfR8oOipSgPuE6zj651rUsF1bmNjPORk9Yw_1_hvRqJ7DhYstc4zh4BoVMRIvsEmuYXn6h6_tChRUe_0bMH2g', 'tokenExpireTime': 7776000, 'uid': '1518049216295530497', 'nickName': '温温温华', 'avatar': 'https://static.merach.com/avatar/20220516/KVOZ7C1NqDPs9SLE.jpeg', 'refreshToken': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6IjE1MTgwNDkyMTYyOTU1MzA0OTciLCJ0eXBlIjoxLCJsb2dpbiI6MiwiZXhwIjoxNjcwMzA0MDg1LCJ1dWlkIjoiMTA3OWE5YzhlMGI1NGY5YmIyNzZhMWVjNGIzMzZjNjkifQ.XeU5w1W2ngwKbZtOHdlJFdYRt3Pys5w-ZOiTlvUjug6F5YuSCljF-WY92WsxcAi412ajTGTH0V733dg63c9VhQ', 'refreshTokenExpireTime': 15552000, 'isRegister': 0}}
+数据库断言数据: {'nick_name': '温温温华'}
+=================================================================================
+INFO     D:\pythonProject\pytest-auto-api2-tag-2.0\logs\info.log:logDecoratorl.py:35 
+=================================================================================
+测试标题: 正常登录
+请求方式: POST
+请求头:   {'Content-Type': 'application/json;charset=UTF-8'}
+请求路径: https://testapi.merach.com/user/login/code?version=2.6.3
+请求内容: {'code': '946390', 'isNewVersion': 1, 'mobile': '17721416811', 'type': 2}
+依赖测试用例: 暂无依赖用例数据
+接口响应内容: {'status': 200, 'message': 'SUCCESS', 'data': {'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJuaWNrbmFtZSI6Iua4qea4qea4qeWNjiIsImlkIjoiMTUxODA0OTIxNjI5NTUzMDQ5NyIsImF2YXRhciI6Imh0dHBzOi8vc3RhdGljLm1lcmFjaC5jb20vYXZhdGFyLzIwMjIwNTE2L0tWT1o3QzFOcURQczlTTEUuanBlZyIsInR5cGUiOjEsImxvZ2luIjoyLCJleHAiOjE2NjI1MjgwODYsInV1aWQiOiIwYWViOTNkZDEyNDg0MTIzODUzOGQ5NGQxMjgxMjI5NiJ9.gKFhSblDSsbWQmAVhraHo_gmVxUslq1PTRp9q-Hk-C1oZ41heWuKGnuPYzqoVstNf2U8yA8pXGTPuBUR3hls8Q', 'tokenExpireTime': 7776000, 'uid': '1518049216295530497', 'nickName': '温温温华', 'avatar': 'https://static.merach.com/avatar/20220516/KVOZ7C1NqDPs9SLE.jpeg', 'refreshToken': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6IjE1MTgwNDkyMTYyOTU1MzA0OTciLCJ0eXBlIjoxLCJsb2dpbiI6MiwiZXhwIjoxNjcwMzA0MDg2LCJ1dWlkIjoiMGFlYjkzZGQxMjQ4NDEyMzg1MzhkOTRkMTI4MTIyOTYifQ.fcsTS2HKJ76OdoaoNuuhk5ofBAScDGU2giQfgWoO1Z-NgH1YvyXjfTitpd-gJc3Pt7Uv1Sclm6lPvdMJV-FOeg', 'refreshTokenExpireTime': 15552000, 'isRegister': 0}}
+数据库断言数据: {'nick_name': '温温温华'}
+=================================================================================

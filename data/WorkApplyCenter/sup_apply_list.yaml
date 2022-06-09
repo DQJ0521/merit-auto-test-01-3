@@ -1,0 +1,60 @@
+# 公共参数
+case_common:
+  allureEpic: Merit平台
+  allureFeature: 用户中心
+  allureStory: 用户登录
+
+
+spu_apply_list_01:
+  host: ${{host}}
+  url: /user/sendSms?version=2.6.3
+  method: post
+  detail: 接口测试demo
+  headers:
+    Content-Type: application/json;charset=UTF-8
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    "code": "946390"
+    "isNewVersion": 1
+    "mobile": "17721416811"
+    "type": 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case:
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    code:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+  sql:
+
+
+spu_apply_list_02:
+  host: ${{host}}
+  url: /user/sendSms?version=2.6.3
+  method: post
+  detail: 测试多个用例
+  headers:
+    Content-Type: application/json;charset=UTF-8
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    mobile: "13500501591"
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case:
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    code:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+  sql:

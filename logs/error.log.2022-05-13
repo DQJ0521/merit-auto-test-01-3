@@ -1,0 +1,65 @@
+%(levelname)-8s2022-05-12 14:19:20,558 D:\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:122 异常用例数: 2
+%(levelname)-8s2022-05-12 14:19:20,558 D:\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:123 失败用例数: 0
+%(levelname)-8s2022-05-12 14:21:13,655 D:\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:122 异常用例数: 2
+%(levelname)-8s2022-05-12 14:21:13,655 D:\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:123 失败用例数: 0
+%(levelname)-8s2022-05-12 14:28:27,201 D:\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:122 异常用例数: 2
+%(levelname)-8s2022-05-12 14:28:27,201 D:\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:123 失败用例数: 0
+%(levelname)-8s2022-05-12 14:39:30,349 D:\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:122 异常用例数: 2
+%(levelname)-8s2022-05-12 14:39:30,349 D:\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:123 失败用例数: 0
+%(levelname)-8s2022-05-12 14:43:55,056 D:\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:122 异常用例数: 2
+%(levelname)-8s2022-05-12 14:43:55,056 D:\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:123 失败用例数: 0
+%(levelname)-8s2022-05-12 17:20:07,914 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:runTimeDecoratorl.py:27 
+=================================================================================
+测试用例执行时间较长，请关注.
+函数运行时间:34103 ms
+测试用例相关数据: (False, False, {'method': 'POST', 'is_run': False, 'url': 'https://testapi.merach.com/api/v1/work/user/loginByPassword', 'detail': '正常登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'param': {'phone': '13300000000', 'password': '123456'}}, 'dependence_case': False, 'dependence_case_data': None, 'sql': None, 'assert': {'code': {'jsonpath': '$.code', 'type': '==', 'value': 200, 'AssertType': None}}})
+=================================================================================
+%(levelname)-8s2022-05-12 17:28:27,641 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:122 异常用例数: 2
+%(levelname)-8s2022-05-12 17:28:27,641 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:123 失败用例数: 0
+%(levelname)-8s2022-05-12 17:35:05,717 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:122 异常用例数: 2
+%(levelname)-8s2022-05-12 17:35:05,718 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:123 失败用例数: 0
+%(levelname)-8s2022-05-12 17:48:52,259 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:122 异常用例数: 2
+%(levelname)-8s2022-05-12 17:48:52,260 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:123 失败用例数: 0
+%(levelname)-8s2022-05-12 18:01:05,248 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:122 异常用例数: 1
+%(levelname)-8s2022-05-12 18:01:05,248 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:123 失败用例数: 0
+%(levelname)-8s2022-05-12 18:38:40,497 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:assertControl.py:115 JsonPath值获取失败$.code
+%(levelname)-8s2022-05-12 18:41:29,507 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:122 异常用例数: 0
+%(levelname)-8s2022-05-12 18:41:29,507 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:123 失败用例数: 0
+%(levelname)-8s2022-05-13 09:37:56,384 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:122 异常用例数: 0
+%(levelname)-8s2022-05-13 09:37:56,400 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:conftest.py:123 失败用例数: 0
+%(levelname)-8s2022-05-13 11:35:29,002 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:39 数据库连接失败，失败原因(1044, "Access denied for user 'devops'@'%' to database 'autotest'")
+%(levelname)-8s2022-05-13 11:35:29,003 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:116 数据库连接失败，失败原因断言的查询sql需要是list类型
+%(levelname)-8s2022-05-13 11:35:29,123 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:48 数据库连接失败，失败原因'MysqlDB' object has no attribute 'cur'
+%(levelname)-8s2022-05-13 11:38:32,747 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:39 数据库连接失败，失败原因(1044, "Access denied for user 'devops'@'%' to database 'test'")
+%(levelname)-8s2022-05-13 11:38:32,748 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:116 数据库连接失败，失败原因断言的查询sql需要是list类型
+%(levelname)-8s2022-05-13 11:38:32,860 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:48 数据库连接失败，失败原因'MysqlDB' object has no attribute 'cur'
+%(levelname)-8s2022-05-13 12:13:20,677 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:39 数据库连接失败，失败原因(1044, "Access denied for user 'devops'@'%' to database 'test'")
+%(levelname)-8s2022-05-13 12:13:20,679 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:116 数据库连接失败，失败原因断言的查询sql需要是list类型
+%(levelname)-8s2022-05-13 12:13:20,800 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:48 数据库连接失败，失败原因'MysqlDB' object has no attribute 'cur'
+%(levelname)-8s2022-05-13 12:17:43,241 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:39 数据库连接失败，失败原因(1044, "Access denied for user 'devops'@'%' to database 'test'")
+%(levelname)-8s2022-05-13 12:17:43,242 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:116 数据库连接失败，失败原因断言的查询sql需要是list类型
+%(levelname)-8s2022-05-13 12:17:43,360 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:48 数据库连接失败，失败原因'MysqlDB' object has no attribute 'cur'
+%(levelname)-8s2022-05-13 12:19:29,551 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:39 数据库连接失败，失败原因(1044, "Access denied for user 'qinzhen'@'%' to database 'test'")
+%(levelname)-8s2022-05-13 12:19:29,552 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:116 数据库连接失败，失败原因断言的查询sql需要是list类型
+%(levelname)-8s2022-05-13 12:19:29,672 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:48 数据库连接失败，失败原因'MysqlDB' object has no attribute 'cur'
+%(levelname)-8s2022-05-13 12:21:41,658 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:39 数据库连接失败，失败原因(1044, "Access denied for user 'qinzhen'@'%' to database 'test'")
+%(levelname)-8s2022-05-13 12:21:41,658 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:116 数据库连接失败，失败原因断言的查询sql需要是list类型
+%(levelname)-8s2022-05-13 12:21:41,775 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:48 数据库连接失败，失败原因'MysqlDB' object has no attribute 'cur'
+%(levelname)-8s2022-05-13 12:22:03,900 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:39 数据库连接失败，失败原因(1044, "Access denied for user 'qinzhen'@'%' to database 'test11'")
+%(levelname)-8s2022-05-13 12:22:03,901 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:116 数据库连接失败，失败原因断言的查询sql需要是list类型
+%(levelname)-8s2022-05-13 12:22:04,010 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:48 数据库连接失败，失败原因'MysqlDB' object has no attribute 'cur'
+%(levelname)-8s2022-05-13 12:26:29,372 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:116 数据库连接失败，失败原因断言的查询sql需要是list类型
+%(levelname)-8s2022-05-13 12:40:21,381 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:assertControl.py:61 断言失败, 预期值:None, 断言类型==, 实际值温温温温温温温温温温温温温温华
+%(levelname)-8s2022-05-13 12:41:00,859 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:116 数据库连接失败，失败原因断言的查询sql需要是list类型
+%(levelname)-8s2022-05-13 12:41:32,693 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:assertControl.py:61 断言失败, 预期值:None, 断言类型==, 实际值温温温温温温温温温温温温温温华
+%(levelname)-8s2022-05-13 13:20:15,131 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:48 数据库连接失败，失败原因'MysqlDB' object has no attribute 'cur'
+%(levelname)-8s2022-05-13 13:20:26,427 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:mysqlControl.py:116 数据库连接失败，失败原因断言的查询sql需要是list类型
+%(levelname)-8s2022-05-13 13:35:02,452 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:assertControl.py:115 JsonPath值获取失败$.nickName
+%(levelname)-8s2022-05-13 13:38:15,922 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:runTimeDecoratorl.py:27 
+=================================================================================
+测试用例执行时间较长，请关注.
+函数运行时间:2269 ms
+测试用例相关数据: ({'status': 200, 'message': 'SUCCESS', 'data': {'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJuaWNrbmFtZSI6Iua4qea4qea4qea4qea4qea4qea4qea4qea4qea4qea4qea4qea4qea4qeWNjiIsImlkIjoiMTUxODA0OTIxNjI5NTUzMDQ5NyIsImF2YXRhciI6Imh0dHBzOi8vc3RhdGljLm1lcmFjaC5jb20vNFdzSTNqb1Y2aTVyRm03cS5wbmciLCJ0eXBlIjoxLCJsb2dpbiI6MiwiZXhwIjoxNjYwMTk2Mjk0LCJ1dWlkIjoiZTZjZjlhNmYwYzk3NDkyNWE5ZWFhNzBiMjIzMmFmYjQifQ.huUSln1332bYyolfAdZGQoTAHAjkx0dHtssx5MoDwC03IluSSOX8kHWgIlthUSh1JaoYxhNxoeI3c9OI0LedPw', 'tokenExpireTime': 7776000, 'uid': '1518049216295530497', 'nickName': '温温温温温温温温温温温温温温华', 'avatar': 'https://static.merach.com/4WsI3joV6i5rFm7q.png', 'refreshToken': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6IjE1MTgwNDkyMTYyOTU1MzA0OTciLCJ0eXBlIjoxLCJsb2dpbiI6MiwiZXhwIjoxNjY3OTcyMjk0LCJ1dWlkIjoiZTZjZjlhNmYwYzk3NDkyNWE5ZWFhNzBiMjIzMmFmYjQifQ.5xCoYkibYRXOMnjdb8snajWsMbSmuOVMQqpuOswnIjfWTYxfuCgrDz5HM2Qnh61J9S9U-6_tsx2zYZHJI-DzAg', 'refreshTokenExpireTime': 15552000, 'isRegister': 0}}, {'nick_name': '温温温温温温温温温温温温温温华'}, {'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/user/login/code?version=2.6.3', 'detail': '正常登录', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'code': '946390', 'isNewVersion': 1, 'mobile': '17721416811', 'type': 2}, 'dependence_case': False, 'dependence_case_data': None, 'sql': ["SELECT nick_name FROM user_info WHERE mobile='17721416811'"], 'assert': {'code': {'jsonpath': '$.data.nickName', 'type': '==', 'value': '温温温温温温温温温温温温温温华', 'AssertType': 'SQL'}}})
+=================================================================================
+%(levelname)-8s2022-05-13 13:41:32,907 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:assertControl.py:115 JsonPath值获取失败$.nickName
+%(levelname)-8s2022-05-13 13:49:23,000 D:\pythonProject\pytest-auto-api2-tag-2.0\logs\error.log:assertControl.py:115 JsonPath值获取失败$.nick_name

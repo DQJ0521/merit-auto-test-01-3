@@ -1,0 +1,99 @@
+{
+  "68ea0f895a7c2c40659d01372c6e840a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b0b92df4b23ae5d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654752086435,
+        "stop" : 1654752086528,
+        "duration" : 93
+      }
+    } ]
+  },
+  "a6431285ef7991ecba2b882a8ef876fe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "57ad5152e5d735f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654752086325,
+        "stop" : 1654752086419,
+        "duration" : 94
+      }
+    } ]
+  },
+  "1a7c8c2bd5dda199401140c784359e71" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "779fda15aa16f96c",
+      "status" : "skipped",
+      "statusDetails" : "Skipped",
+      "time" : {
+        "start" : 1654752086293,
+        "stop" : 1654752086293,
+        "duration" : 0
+      }
+    } ]
+  },
+  "50546d53f6058092b6fcaac1ce4c98ab" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3c965bee28376bf9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654752086090,
+        "stop" : 1654752086293,
+        "duration" : 203
+      }
+    } ]
+  },
+  "3e39804f5a221800ab95c994b6625e69" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "71368f51e1ea6927",
+      "status" : "skipped",
+      "statusDetails" : "Skipped",
+      "time" : {
+        "start" : 1654752086544,
+        "stop" : 1654752086544,
+        "duration" : 0
+      }
+    } ]
+  }
+}

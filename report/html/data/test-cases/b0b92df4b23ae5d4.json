@@ -1,0 +1,481 @@
+{
+  "uid" : "b0b92df4b23ae5d4",
+  "name" : "测试多个用例",
+  "fullName" : "test_case.WorkApplyCenter.test_sup_apply_list.TestSupApplyList#test_sup_apply_list",
+  "historyId" : "68ea0f895a7c2c40659d01372c6e840a",
+  "time" : {
+    "start" : 1654752086435,
+    "stop" : 1654752086528,
+    "duration" : 93
+  },
+  "description" : "\n        :param :\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    :param :\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1654752085527,
+      "stop" : 1654752085574,
+      "duration" : 47
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "work_login_init",
+    "time" : {
+      "start" : 1654752085574,
+      "stop" : 1654752085856,
+      "duration" : 282
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求URL: https://testapi.merach.com/user/login/code?version=2.6.3",
+      "time" : {
+        "start" : 1654752085777,
+        "stop" : 1654752085777,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求方式: POST",
+      "time" : {
+        "start" : 1654752085777,
+        "stop" : 1654752085777,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求头: ",
+      "time" : {
+        "start" : 1654752085777,
+        "stop" : 1654752085777,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5a0dd09de7e738b2",
+        "name" : "请求头: ",
+        "source" : "5a0dd09de7e738b2.json",
+        "type" : "application/json",
+        "size" : 52
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据: ",
+      "time" : {
+        "start" : 1654752085777,
+        "stop" : 1654752085777,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e337f4a90a263e26",
+        "name" : "请求数据: ",
+        "source" : "e337f4a90a263e26.json",
+        "type" : "application/json",
+        "size" : 75
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "依赖数据: ",
+      "time" : {
+        "start" : 1654752085777,
+        "stop" : 1654752085777,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b18795af1d0e3b1e",
+        "name" : "依赖数据: ",
+        "source" : "b18795af1d0e3b1e.json",
+        "type" : "application/json",
+        "size" : 6
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "预期数据: ",
+      "time" : {
+        "start" : 1654752085777,
+        "stop" : 1654752085777,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8350bbec5bc96ae8",
+        "name" : "预期数据: ",
+        "source" : "8350bbec5bc96ae8.json",
+        "type" : "application/json",
+        "size" : 102
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应耗时(s): 0.147637",
+      "time" : {
+        "start" : 1654752085777,
+        "stop" : 1654752085777,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "响应结果: ",
+      "time" : {
+        "start" : 1654752085777,
+        "stop" : 1654752085777,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9a0ea8468132075c",
+        "name" : "响应结果: ",
+        "source" : "9a0ea8468132075c.json",
+        "type" : "application/json",
+        "size" : 964
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 8,
+    "hasContent" : true
+  }, {
+    "name" : "clear_report",
+    "time" : {
+      "start" : 1654752085574,
+      "stop" : 1654752085574,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "write_case_process",
+    "time" : {
+      "start" : 1654752085856,
+      "stop" : 1654752086090,
+      "duration" : 234
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "case_skip",
+    "time" : {
+      "start" : 1654752086435,
+      "stop" : 1654752086435,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param :\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求URL: https://testapi.merach.com/user/sendSms?version=2.6.3",
+      "time" : {
+        "start" : 1654752086528,
+        "stop" : 1654752086528,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求方式: POST",
+      "time" : {
+        "start" : 1654752086528,
+        "stop" : 1654752086528,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求头: ",
+      "time" : {
+        "start" : 1654752086528,
+        "stop" : 1654752086528,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "891f899c0d4f8c29",
+        "name" : "请求头: ",
+        "source" : "891f899c0d4f8c29.json",
+        "type" : "application/json",
+        "size" : 52
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据: ",
+      "time" : {
+        "start" : 1654752086528,
+        "stop" : 1654752086528,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e96699f4aa91346d",
+        "name" : "请求数据: ",
+        "source" : "e96699f4aa91346d.json",
+        "type" : "application/json",
+        "size" : 27
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "依赖数据: ",
+      "time" : {
+        "start" : 1654752086528,
+        "stop" : 1654752086528,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bfa898c96de73683",
+        "name" : "依赖数据: ",
+        "source" : "bfa898c96de73683.json",
+        "type" : "application/json",
+        "size" : 6
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "预期数据: ",
+      "time" : {
+        "start" : 1654752086528,
+        "stop" : 1654752086528,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2e599a73e40d77a",
+        "name" : "预期数据: ",
+        "source" : "2e599a73e40d77a.json",
+        "type" : "application/json",
+        "size" : 84
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应耗时(s): 0.095638",
+      "time" : {
+        "start" : 1654752086528,
+        "stop" : 1654752086528,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "响应结果: ",
+      "time" : {
+        "start" : 1654752086528,
+        "stop" : 1654752086528,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "81ee0779b1f3127",
+        "name" : "响应结果: ",
+        "source" : "81ee0779b1f3127.json",
+        "type" : "application/json",
+        "size" : 39
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "65fa22579dbfcfac",
+      "name" : "log",
+      "source" : "65fa22579dbfcfac.txt",
+      "type" : "text/plain",
+      "size" : 613
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "clear_report::0",
+    "time" : {
+      "start" : 1654752086544,
+      "stop" : 1654752086544,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Merit平台"
+  }, {
+    "name" : "story",
+    "value" : "用户登录"
+  }, {
+    "name" : "feature",
+    "value" : "登录中心"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.WorkApplyCenter"
+  }, {
+    "name" : "suite",
+    "value" : "test_sup_apply_list"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSupApplyList"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-5N1NG0H"
+  }, {
+    "name" : "thread",
+    "value" : "62300-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.WorkApplyCenter.test_sup_apply_list"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "in_data",
+    "value" : "{'method': 'POST', 'is_run': None, 'url': 'https://testapi.merach.com/user/sendSms?version=2.6.3', 'detail': '测试多个用例', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'mobile': '13500501591'}, 'dependence_case': None, 'dependence_case_data': None, 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b0b92df4b23ae5d4.json",
+  "parameterValues" : [ "{'method': 'POST', 'is_run': None, 'url': 'https://testapi.merach.com/user/sendSms?version=2.6.3', 'detail': '测试多个用例', 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'requestType': 'JSON', 'data': {'mobile': '13500501591'}, 'dependence_case': None, 'dependence_case_data': None, 'sql': None, 'assert': {'code': {'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}}}" ]
+}

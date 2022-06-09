@@ -1,0 +1,33 @@
+# 公共参数
+case_common:
+  allureEpic: 电商平台端
+  allureFeature: 登录模块
+  allureStory: 正常登录
+
+login:
+    host: ${{host}}
+    url: /user/login/code?version=2.6.3
+    method: POST
+    detail: 正常登录
+    headers:
+      Content-Type: application/json;charset=UTF-8
+    # 请求的数据，是 params 还是 json、或者file
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run: true
+    data:
+      "code": "946390"
+      "isNewVersion": 1
+      "mobile": "17721416811"
+      "type": 2
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      code:
+        jsonpath: $.data.nickName
+        type: ==
+        value: $.nick_name
+        AssertType: SQL
+    sql: ["SELECT nick_name FROM user_info WHERE mobile='17721416811'"]
