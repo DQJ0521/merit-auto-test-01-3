@@ -9,7 +9,7 @@ from utils.assertUtils.assertControl import Assert
 from utils.requestsUtils.requestControl import RequestControl
 
 
-TestData = CaseData(ConfigHandler.data_path + r'WorkApplyCenter/spu_apply.yaml').case_process()
+TestData = CaseData(ConfigHandler.data_path + r'WorkApplyCenter/query_collect_course.yaml').case_process()
 
 
 @allure.epic("Merit_APP")
@@ -29,4 +29,4 @@ class TestSpuApply:
 
 
 if __name__ == '__main__':
-    pytest.main(['test_spu_apply.py', '-s', '-W', 'ignore:Module already imported:pytest.PytestWarning'])
+    pytest.main(['test_query_collect_course.py', '-s', '-W', 'ignore:Module already imported:pytest.PytestWarning'])

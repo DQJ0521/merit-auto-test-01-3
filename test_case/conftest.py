@@ -6,6 +6,8 @@ import os
 import pytest
 import time
 import allure
+import requests
+import json
 from utils.requestsUtils.requestControl import RequestControl
 from config.setting import ConfigHandler
 from utils.readFilesUtils.get_yaml_data_analysis import CaseData
@@ -78,25 +80,23 @@ def work_login_init_app():
         WARNING.logger.warning("登录用例设置的是不执行，无法获取到token信息")
 
 
-# @pytest.fixture(scope="session", autouse=True)
-# def work_login_init_houtai():
-#     """
-#     获取管理后台的token信息
-#     :return:
-#     """
-#     login_houtai_yaml = CaseData(ConfigHandler.data_path + 'Login/login_houtai').case_process()[0]
-#     res = RequestControl().http_request(login_houtai_yaml)
-#     # 将token写入缓存中
-#     if res[0] is not False:
-#         if res[0]['data']:
-#             login_data = res[0]['data']
-#             Cache('work_login_init_houtai').set_caches(login_data)
-#         else:
-#             login_data = None
-#             WARNING.logger.warning("无法获取到login_data信息")
-#         return login_data
-#     else:
-#         WARNING.logger.warning("登录用例设置的是不执行，无法获取到token信息")
+@pytest.fixture(scope="session", autouse=True)
+def work_login_init_houtai():
+    """
+    获取管理后台的token信息
+    :return:
+    """
+    headers = {"content-type": "application/json"}
+    url = "https://testapi.merach.com/admin/signIn"
+    data = {"username": "18088888888", "password": "admin123"}
+    res_data = requests.post(url=url, json=data, headers=headers)
+    token_dict = json.loads(res_data.text)
+    # 将token写入缓存中
+    if token_dict["data"]:
+        token = token_dict["data"]
+        Cache('work_login_init_houtai').set_caches(token)
+    else:
+        WARNING.logger.warning("无法获取到login_data信息")
 
 
 def pytest_collection_modifyitems(items):

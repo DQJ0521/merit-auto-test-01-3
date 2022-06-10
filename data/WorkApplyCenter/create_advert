@@ -1,0 +1,143 @@
+# 公共参数
+case_common:
+  allureEpic: Merit_管理后台
+  allureFeature: 推荐位管理
+  allureStory: 推荐位新建
+
+create_advert_01:
+  host: ${{host}}
+  url: /admin/advert/position
+  method: post
+  detail: 正常创建推荐位
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    channel: "merach_app"
+    diagramUrl: "https://static.merach.com/other/20220610/a16ba5b2a83e4598bfd19c6e495954ef_700x700.jpg"
+    layout: "single_seq"
+    positionCode: "123123"
+    positionName: "123123"
+    remark: "123123"
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: True
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    position_name:
+      other_value: "123123"
+      jsonpath:
+      type: ==
+      value: $.position_name
+      AssertType: SQL
+  sql: ["SELECT position_name FROM advert_position_info WHERE position_code='123123'"]
+
+create_advert_02:
+  host: ${{host}}
+  url: /admin/advert/position
+  method: post
+  detail: 创建推荐位唯一码重复
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    channel: "merach_app"
+    diagramUrl: "https://static.merach.com/other/20220610/a16ba5b2a83e4598bfd19c6e495954ef_700x700.jpg"
+    layout: "single_seq"
+    positionCode: "ssxx01"
+    positionName: "1231234"
+    remark: "123123"
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 501
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "该唯一码已经使用，请更换后保存"
+      AssertType:
+  sql:
+
+create_advert_03:
+  host: ${{host}}
+  url: /admin/advert/position
+  method: post
+  detail: 创建推荐位名称重复
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    channel: "merach_app"
+    diagramUrl: "https://static.merach.com/other/20220610/a16ba5b2a83e4598bfd19c6e495954ef_700x700.jpg"
+    layout: "single_seq"
+    positionCode: "1231234"
+    positionName: "BABA"
+    remark: "自动化测试"
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 501
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "该名称已经使用，请更换后保存"
+      AssertType:
+  sql:

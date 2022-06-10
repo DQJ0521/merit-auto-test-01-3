@@ -9,16 +9,16 @@ from utils.assertUtils.assertControl import Assert
 from utils.requestsUtils.requestControl import RequestControl
 
 
-TestData = CaseData(ConfigHandler.data_path + r'Login/login_houtai').case_process()
+TestData = CaseData(ConfigHandler.data_path + r'WorkApplyCenter/create_advert').case_process()
 
 
-@allure.epic("Merit后台")
-@allure.feature("后台登录模块")
-class TestLogin:
+@allure.epic("Merit_管理后台")
+@allure.feature("推荐位管理")
+class TestCreateAdvert:
 
-    @allure.story("后台正常登录")
+    @allure.story("推荐位新增")
     @pytest.mark.parametrize('in_data', TestData, ids=[i['detail'] for i in TestData])
-    def test_login(self, in_data, case_skip):
+    def test_create_advert(self, in_data, case_skip):
         """
         :param :
         :return:
@@ -29,4 +29,4 @@ class TestLogin:
 
 
 if __name__ == '__main__':
-    pytest.main(['test_login_houtai.py', '-s', '-W', 'ignore:Module already imported:pytest.PytestWarning'])
+    pytest.main(['test_create_advert.py', '-s', '-W', 'ignore:Module already imported:pytest.PytestWarning'])

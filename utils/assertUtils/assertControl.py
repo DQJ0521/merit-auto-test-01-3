@@ -100,6 +100,7 @@ class Assert:
         # 判断数据类型
         if self._check_params(response_data, sql_data) is not False:
             for key, values in self.assert_data.items():
+                assert_other_value = self.assert_data[key]['other_value']
                 assert_value = self.assert_data[key]['value']  # 获取 yaml 文件中的期望value值
                 assert_jsonpath = self.assert_data[key]['jsonpath']  # 获取到 yaml断言中的jsonpath的数据
                 assert_type = self.assert_data[key]['AssertType']
@@ -110,6 +111,9 @@ class Assert:
                 if resp_data is not False:
                     # 判断断言类型
                     self.assert_type_handle(assert_type, sql_data, assert_value, key, values, resp_data)
+                elif assert_other_value:
+                    list_value = [assert_other_value]
+                    self.assert_type_handle(assert_type, sql_data, assert_value, key, values, list_value)
                 else:
                     ERROR.logger.error("JsonPath值获取失败{}".format(assert_jsonpath))
                     raise ValueError(f"JsonPath值获取失败{assert_jsonpath}")
