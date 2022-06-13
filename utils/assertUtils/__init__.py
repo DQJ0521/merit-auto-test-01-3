@@ -6,7 +6,7 @@ from config.setting import ConfigHandler
 from utils.readFilesUtils.get_yaml_data_analysis import CaseData
 
 
-TestData = CaseData(ConfigHandler.data_path + r'WorkApplyCenter/sup_apply_list.yaml').case_process()
+TestData = CaseData(ConfigHandler.data_path + r'WorkApplyCenter/edit_advert.yaml').case_process()
 
 is_run = [i for i in TestData if i['is_run'] is False]
 

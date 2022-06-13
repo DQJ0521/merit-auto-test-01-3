@@ -14,7 +14,7 @@ login:
     # 请求的数据，是 params 还是 json、或者file
     requestType: json
     # 是否执行，空或者 true 都会执行
-    is_run: true
+    is_run: false
     data:
       "code": "946390"
       "isNewVersion": 1
@@ -26,6 +26,7 @@ login:
     dependence_case_data:
     assert:
       code:
+        other_value:
         jsonpath: $.data.nickName
         type: ==
         value: $.nick_name

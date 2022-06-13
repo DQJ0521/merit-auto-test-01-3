@@ -65,15 +65,18 @@ def work_login_init_app():
     获取APP的token信息
     :return:
     """
-    login_yaml = CaseData(ConfigHandler.data_path + 'Login/login.yaml').case_process()[0]
-    res = RequestControl().http_request(login_yaml)
+    headers = {"content-type": "application/json"}
+    url = "https://testapi.merach.com/user/login/code?version=2.7.1"
+    data = {'code': '946390', 'isNewVersion': 1, 'mobile': '17721416811', 'type': 2}
+    res_data = requests.post(url=url, json=data, headers=headers)
+    token_dict = json.loads(res_data.text)
     # 将token写入缓存中
-    if res[0] is not False:
-        # if res[0]['data']['refreshToken']:
-        #     token = res[0]['data']['refreshToken']
+    if token_dict is not False:
+        # if token_dict['data']['refreshToken']:
+        #     token = token_dict['data']['refreshToken']
         #     Cache('work_login_init').set_caches(token)
         # else:
-        token = res[0]['data']['token']
+        token = token_dict['data']['token']
         Cache('work_login_init').set_caches(token)
         return token
     else:

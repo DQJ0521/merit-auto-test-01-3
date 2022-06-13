@@ -32,6 +32,7 @@ spu_apply_01:
           replace_key: $.data.reason
   assert:
     code:
+      other_value:
       jsonpath: $.status
       type: ==
       value: 200
