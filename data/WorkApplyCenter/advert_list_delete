@@ -1,0 +1,204 @@
+# 公共参数
+case_common:
+  allureEpic: Merit_管理后台
+  allureFeature: 推荐位管理
+  allureStory: 列表查询和删除
+
+advert_list_01:
+  host: ${{host}}
+  url: /admin/advert/position/list?current=1&size=10
+  method: get
+  detail: 推荐位列表查询
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    create_name:
+      other_value:
+      jsonpath: $.data.records[0].createName
+      type: ==
+      value: "管理员"
+      AssertType:
+  sql: ["SELECT position_name FROM advert_position_info WHERE position_code='123123'"]
+
+advert_list_02:
+  host: ${{host}}
+  url: /admin/advert/position/list?current=1&size=10&keyWord=99
+  method: get
+  detail: 关键词查询列表
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    create_name:
+      other_value:
+      jsonpath: $.data.records[0].createName
+      type: ==
+      value: "管理员"
+      AssertType:
+  sql:
+
+advert_list_03:
+  host: ${{host}}
+  url: /admin/advert/position/list?current=1&size=10&keyWord=&channel=merach_app
+  method: get
+  detail: 渠道查询列表
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    create_name:
+      other_value:
+      jsonpath: $.data.records[0].createName
+      type: ==
+      value: "管理员"
+      AssertType:
+  sql:
+
+advert_list_04:
+  host: ${{host}}
+  url: /admin/advert/position/list?current=1&size=10&keyWord=99&channel=merach_app_external
+  method: get
+  detail: 关键字渠道查询列表
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    create_name:
+      other_value:
+      jsonpath: $.data.records[0].createName
+      type: ==
+      value: "管理员"
+      AssertType:
+  sql:
+
+advert_delete_01:
+  host: ${{host}}
+  url: /admin/advert/position/13
+  method: DELETE
+  detail: 推荐位删除
+  headers:
+    Content-Type: application/x-www-form-urlencoded
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+  sql:

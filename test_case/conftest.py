@@ -80,7 +80,7 @@ def work_login_init_app():
         Cache('work_login_init').set_caches(token)
         return token
     else:
-        WARNING.logger.warning("登录用例设置的是不执行，无法获取到token信息")
+        WARNING.logger.warning("登录方法执行失败，无法获取到token信息")
 
 
 @pytest.fixture(scope="session", autouse=True)
