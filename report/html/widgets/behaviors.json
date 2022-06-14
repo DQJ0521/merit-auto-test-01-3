@@ -1,35 +1,24 @@
 {
-  "total" : 3,
+  "total" : 2,
   "items" : [ {
     "uid" : "66eb9be07cb217c6dd088494f4de97d3",
     "name" : "Merit_APP",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 2,
+      "skipped" : 1,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 3
+      "total" : 2
     }
   }, {
-    "uid" : "6be04cafac00424b3c461b9ef46656ab",
-    "name" : "Merit后台",
+    "uid" : "820fb2baf57ee5720db19cd35d50a92d",
+    "name" : "Merit_管理后台",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "e30b40430e862b27213e6b60eb1239aa",
-    "name" : "电商平台端",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }

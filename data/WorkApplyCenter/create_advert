@@ -48,7 +48,7 @@ create_advert_01:
       type: ==
       value: $.position_name
       AssertType: SQL
-  sql: ["SELECT position_name FROM advert_position_info WHERE position_code='123123'"]
+  sql: ["SELECT position_name FROM advert_position_info WHERE position_code='123123' and is_delete=0"]
 
 create_advert_02:
   host: ${{host}}

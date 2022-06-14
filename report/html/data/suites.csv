@@ -1,25 +1,53 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Jun 09 17:31:22 CST 2022","Thu Jun 09 17:31:22 CST 2022","129","test_case.WorkApplyCenter","test_sup_apply_list","TestSupApplyList","","","测试多个用例","
+"passed","Tue Jun 14 17:47:21 CST 2022","Tue Jun 14 17:47:21 CST 2022","214","test_case.WorkApplyCenter","test_edit_advert","TestSupApplyList","","","编辑推荐位名称重复","
         :param :
         :return:
         "
-"passed","Thu Jun 09 17:31:22 CST 2022","Thu Jun 09 17:31:22 CST 2022","242","test_case.Login","test_login_houtai","TestLogin","","","正常登录","
+"passed","Tue Jun 14 17:47:20 CST 2022","Tue Jun 14 17:47:20 CST 2022","202","test_case.WorkApplyCenter","test_create_advert","TestCreateAdvert","","","创建推荐位名称重复","
         :param :
         :return:
         "
-"passed","Thu Jun 09 17:31:22 CST 2022","Thu Jun 09 17:31:22 CST 2022","204","test_case.WorkApplyCenter","test_sup_apply_list","TestSupApplyList","","","接口测试demo","
+"passed","Tue Jun 14 17:47:19 CST 2022","Tue Jun 14 17:47:19 CST 2022","141","test_case.WorkApplyCenter","test_advert_list_delete","TestSupApplyList","","","关键词查询列表","
         :param :
         :return:
         "
-"passed","Thu Jun 09 17:31:21 CST 2022","Thu Jun 09 17:31:22 CST 2022","251","test_case.Login","test_login","TestLogin","","","正常登录","
+"passed","Tue Jun 14 17:47:19 CST 2022","Tue Jun 14 17:47:19 CST 2022","219","test_case.WorkApplyCenter","test_advert_list_delete","TestSupApplyList","","","推荐位列表查询","
         :param :
         :return:
         "
-"failed","Thu Jun 09 17:31:22 CST 2022","Thu Jun 09 17:31:22 CST 2022","104","test_case.WorkApplyCenter","test_spu_apply","TestSpuApply","","","查询收藏课程列表","
+"passed","Tue Jun 14 17:47:19 CST 2022","Tue Jun 14 17:47:19 CST 2022","131","test_case.WorkApplyCenter","test_advert_list_delete","TestSupApplyList","","","渠道查询列表","
         :param :
         :return:
         "
-"skipped","Thu Jun 09 17:31:22 CST 2022","Thu Jun 09 17:31:22 CST 2022","0","test_case.WorkApplyCenter","test_work_apply_good_detail","TestWorkApplyGoodDetail","","","test_work_apply_good_detail[查看商品审核详情]","
+"passed","Tue Jun 14 17:47:20 CST 2022","Tue Jun 14 17:47:20 CST 2022","280","test_case.WorkApplyCenter","test_create_advert","TestCreateAdvert","","","正常创建推荐位","
+        :param :
+        :return:
+        "
+"passed","Tue Jun 14 17:47:19 CST 2022","Tue Jun 14 17:47:20 CST 2022","188","test_case.WorkApplyCenter","test_advert_list_delete","TestSupApplyList","","","推荐位删除","
+        :param :
+        :return:
+        "
+"passed","Tue Jun 14 17:47:21 CST 2022","Tue Jun 14 17:47:21 CST 2022","215","test_case.WorkApplyCenter","test_edit_advert","TestSupApplyList","","","正常编辑推荐位名称","
+        :param :
+        :return:
+        "
+"passed","Tue Jun 14 17:47:19 CST 2022","Tue Jun 14 17:47:19 CST 2022","160","test_case.WorkApplyCenter","test_advert_list_delete","TestSupApplyList","","","关键字渠道查询列表","
+        :param :
+        :return:
+        "
+"passed","Tue Jun 14 17:47:20 CST 2022","Tue Jun 14 17:47:20 CST 2022","148","test_case.WorkApplyCenter","test_create_advert","TestCreateAdvert","","","创建推荐位唯一码重复","
+        :param :
+        :return:
+        "
+"passed","Tue Jun 14 17:47:21 CST 2022","Tue Jun 14 17:47:22 CST 2022","235","test_case.WorkApplyCenter","test_query_collect_course","TestSpuApply","","","查询收藏课程列表","
+        :param :
+        :return:
+        "
+"passed","Tue Jun 14 17:47:21 CST 2022","Tue Jun 14 17:47:21 CST 2022","180","test_case.WorkApplyCenter","test_edit_advert","TestSupApplyList","","","编辑推荐位渠道","
+        :param :
+        :return:
+        "
+"skipped","Tue Jun 14 17:47:18 CST 2022","Tue Jun 14 17:47:18 CST 2022","0","test_case.Login","test_login","TestLogin","","","test_login[正常登录]","
         :param :
         :return:
         "

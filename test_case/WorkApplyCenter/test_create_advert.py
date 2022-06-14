@@ -32,8 +32,7 @@ class TestCreateAdvert:
     def teardown_class(self):
         mysql = MysqlDB()
         remark = "自动化测试" + time.strftime('%Y-%m-%d %X')
-        update_sql = "UPDATE advert_position_info SET is_delete=1,remark='%s' WHERE id=" \
-                     "(SELECT id FROM advert_position_info WHERE position_name='123123' ORDER BY id desc LIMIT 1)" % remark
+        update_sql = "UPDATE advert_position_info SET is_delete=1,remark='%s' WHERE position_name='123123' ORDER BY id DESC LIMIT 1" % remark
         mysql.execute(sql=update_sql)
         print("测试数据恢复方法是否可用")
 
