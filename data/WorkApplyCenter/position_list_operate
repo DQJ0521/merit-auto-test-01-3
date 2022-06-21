@@ -1,0 +1,202 @@
+# 公共参数
+case_common:
+  allureEpic: Merit_管理后台
+  allureFeature: 推荐位管理
+  allureStory: 推荐位配置
+
+query_position_list_01:
+  host: ${{host}}
+  url: /admin/advert/list?positionInfoId=20
+  method: get
+  detail: 查询推荐位配置列表
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: True
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "SUCCESS"
+      AssertType:
+  sql:
+
+position_xiajia_02:
+  host: ${{host}}
+  url: /admin/advert/status
+  method: put
+  detail: 推荐位内容下架
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    advertStatus: 0
+    id: "55"
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: True
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "SUCCESS"
+      AssertType:
+  sql:
+
+position_edit_03:
+  host: ${{host}}
+  url: /admin/advert
+  method: put
+  detail: 推荐位内容正常编辑
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    advertStatus: 2
+    beginTime: "2022-06-08 14:20:00"
+    content: "红红火火恍恍惚惚"
+    contentType: "h5_app"
+    createId: "1"
+    createTime: "2022-06-08 14:10:46"
+    endTime: "2023-06-30 14:10:27"
+    extParams: ""
+    id: "55"
+    image: "https://static.merach.com/other/20220608/9a5c5226381d4540a59a31e035537717_720x1280.JPG"
+    isDelete: 0
+    isVip: 2
+    positionInfoId: "20"
+    remark: "自动化测试"
+    seq: 3
+    tags: [ ]
+    title: "测试上架时间"
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: True
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "SUCCESS"
+      AssertType:
+  sql:
+
+position_edit_04:
+  host: ${{host}}
+  url: /admin/advert
+  method: put
+  detail: 内容编辑标题重复
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    advertStatus: 2
+    beginTime: "2022-06-08 14:20:00"
+    content: "红红火火恍恍惚惚"
+    contentType: "h5_app"
+    createId: "1"
+    createTime: "2022-06-08 14:10:46"
+    endTime: "2023-06-30 14:10:27"
+    extParams: ""
+    id: "52"
+    image: "https://static.merach.com/other/20220608/9a5c5226381d4540a59a31e035537717_720x1280.JPG"
+    isDelete: 0
+    isVip: 2
+    positionInfoId: "20"
+    remark: "自动化测试"
+    seq: 3
+    tags: [ ]
+    title: "1111"
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: True
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 501
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "该标题已经使用，请更换后保存"
+      AssertType:
+  sql:

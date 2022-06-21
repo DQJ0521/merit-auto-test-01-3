@@ -1,0 +1,148 @@
+# 公共参数
+case_common:
+  allureEpic: Merit_管理后台
+  allureFeature: 推荐位管理
+  allureStory: 推荐位内容增删
+
+position_create_01:
+  host: ${{host}}
+  url: /admin/advert
+  method: post
+  detail: 推荐位内容正常创建
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    beginTime: "2022-06-20 14:30:15"
+    content: "自动化测试自动化测试"
+    contentType: "app_link"
+    endTime: "2023-06-30 14:30:26"
+    image: "https://static.merach.com/other/20220621/d2f7aab4d14344b097ec603b14a53815_690x690.jpg"
+    isVip: 0
+    positionInfoId: "19"
+    remark: "自动化测试"
+    seq: 999
+    tags: [ "16" ]
+    title: "自动化测试数据"
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: True
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "SUCCESS"
+      AssertType:
+  sql:
+
+position_create_02:
+  host: ${{host}}
+  url: /admin/advert
+  method: post
+  detail: 推荐位内容创建标题重复
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    beginTime: "2022-06-18 14:30:15"
+    content: "自动化测试"
+    contentType: "app_link"
+    endTime: "2023-06-18 14:30:26"
+    image: "https://static.merach.com/other/20220621/d2f7aab4d14344b097ec603b14a53815_690x690.jpg"
+    isVip: 0
+    positionInfoId: "19"
+    remark: "自动化测试1"
+    seq: 888
+    tags: [ "16" ]
+    title: "自动化测试数据"
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: True
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 501
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: '该标题已经使用，请更换后保存'
+      AssertType:
+  sql:
+
+position_delete_01:
+  host: ${{host}}
+  url: /admin/advert/59
+  method: delete
+  detail: 推荐位内容删除
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: True
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: 'SUCCESS'
+      AssertType:
+  sql:

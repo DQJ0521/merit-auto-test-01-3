@@ -29,7 +29,7 @@ def Timestamp_conversion(timeStr: str) -> int:
         timestamp = int(time.mktime(datetimeFormat.timetuple()) * 1000.0 + datetimeFormat.microsecond / 1000.0)
         return timestamp
     except ValueError:
-        raise '日期格式错误, 需要传入得格式为 "%Y-%m-%d %H:%M:%S" '
+        raise Exception("日期格式错误, 需要传入得格式为 '%Y-%m-%d %H:%M:%S'")
 
 
 def Time_conversion(timeNum: int):
@@ -45,7 +45,7 @@ def Time_conversion(timeNum: int):
         return otherStyleTime
 
     else:
-        raise "请传入正确的时间戳"
+        raise Exception("请传入正确的时间戳")
 
 
 def NowTime():
