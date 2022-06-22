@@ -26,7 +26,7 @@ position_create_01:
     positionInfoId: "19"
     remark: "自动化测试"
     seq: 999
-    tags: [ "16" ]
+    tags: [ "24" ]
     title: "自动化测试数据"
     # 是否有依赖业务，为空或者false则表示没有
   dependence_case: True
@@ -77,7 +77,7 @@ position_create_02:
     positionInfoId: "19"
     remark: "自动化测试1"
     seq: 888
-    tags: [ "16" ]
+    tags: [ "24" ]
     title: "自动化测试数据"
     # 是否有依赖业务，为空或者false则表示没有
   dependence_case: True
