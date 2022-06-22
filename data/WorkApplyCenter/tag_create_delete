@@ -1,0 +1,181 @@
+# 公共参数
+case_common:
+  allureEpic: Merit_管理后台
+  allureFeature: 标签管理
+  allureStory: 标签增删
+
+tag_create_01:
+  host: ${{host}}
+  url: /admin/user/tag
+  method: post
+  detail: 标签新增
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    seq: 1
+    tagCategoryId: "1"
+    tagCode: "zdhcs01"
+    tagName: "自动化测试标签"
+    tagStatus: 1
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    message:
+      other_value: "自动化测试标签"
+      jsonpath:
+      type: ==
+      value: $.tag_name
+      AssertType: SQL
+  sql: ["SELECT tag_name FROM tag WHERE tag_name='自动化测试标签'"]
+
+tag_create_02:
+  host: ${{host}}
+  url: /admin/user/tag
+  method: post
+  detail: 标签创建名称重复
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    seq: 1
+    tagCategoryId: "1"
+    tagCode: "zdhcs01"
+    tagName: "自动化测试标签"
+    tagStatus: 1
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 501
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "名称已经使用，请更换后保存"
+      AssertType:
+  sql:
+
+tag_create_03:
+  host: ${{host}}
+  url: /admin/user/tag
+  method: post
+  detail: 标签创建唯一码重复
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    seq: 1
+    tagCategoryId: "1"
+    tagCode: "zdhcs01"
+    tagName: "自动化测试标签1"
+    tagStatus: 1
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 501
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "唯一码已经使用，请更换后保存"
+      AssertType:
+  sql:
+
+tag_delete_01:
+  host: ${{host}}
+  url: /admin/user/tag/18
+  method: delete
+  detail: 标签删除
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 200
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: 'SUCCESS'
+      AssertType:
+  sql:
