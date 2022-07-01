@@ -12,7 +12,7 @@ TestData = CaseData(ConfigHandler.data_path + r'WorkApplyCenter/advert_list_dele
 
 @allure.epic("Merit_管理后台")
 @allure.feature("推荐位管理")
-class TestSupApplyList:
+class TestAdvertList:
 
     @allure.story("推荐位列表")
     @pytest.mark.parametrize('in_data', TestData, ids=[i['detail'] for i in TestData])

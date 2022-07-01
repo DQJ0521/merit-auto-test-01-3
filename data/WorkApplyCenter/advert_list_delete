@@ -129,7 +129,7 @@ advert_list_03:
 
 advert_list_04:
   host: ${{host}}
-  url: /admin/advert/position/list?current=1&size=10&keyWord=99&channel=merach_app_external
+  url: /admin/advert/position/list?current=1&size=10&keyWord=99&channel=merach_app
   method: get
   detail: 关键字渠道查询列表
   headers:
