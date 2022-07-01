@@ -9,12 +9,12 @@
         "name" : "APP正常登录",
         "children" : [ {
           "name" : "test_login[正常登录]",
-          "uid" : "d5d9a839921a6652",
+          "uid" : "e76cb0941b161383",
           "parentUid" : "d9127afc773af92fe4b0c5fb807e4bf4",
           "status" : "skipped",
           "time" : {
-            "start" : 1655200038690,
-            "stop" : 1655200038690,
+            "start" : 1655881659662,
+            "stop" : 1655881659662,
             "duration" : 0
           },
           "flaky" : false,
@@ -34,13 +34,13 @@
         "name" : "查询收藏课程列表",
         "children" : [ {
           "name" : "查询收藏课程列表",
-          "uid" : "19ed5f4627b3d2a8",
+          "uid" : "80aa0a8198a5e45",
           "parentUid" : "a246753eb90164dfc047efb562fdb454",
           "status" : "passed",
           "time" : {
-            "start" : 1655200041931,
-            "stop" : 1655200042166,
-            "duration" : 235
+            "start" : 1655881665574,
+            "stop" : 1655881665820,
+            "duration" : 246
           },
           "flaky" : false,
           "newFailed" : false,
@@ -63,13 +63,13 @@
         "name" : "推荐位列表",
         "children" : [ {
           "name" : "推荐位列表查询",
-          "uid" : "60fe2bc3b4ceea17",
+          "uid" : "2b56b4d8a1923665",
           "parentUid" : "af14fd841ddd94393f1d5681a0929004",
           "status" : "passed",
           "time" : {
-            "start" : 1655200039299,
-            "stop" : 1655200039518,
-            "duration" : 219
+            "start" : 1655881660210,
+            "stop" : 1655881660447,
+            "duration" : 237
           },
           "flaky" : false,
           "newFailed" : false,
@@ -80,13 +80,13 @@
           "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/position/list?current=1&size=10', 'detail': '推荐位列表查询', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': [\"SELECT position_name FROM advert_position_info WHERE position_code='123123'\"], 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'create_name': {'other_value': None, 'jsonpath': '$.data.records[0].createName', 'type': '==', 'value': '管理员', 'AssertType': None}}}" ]
         }, {
           "name" : "关键词查询列表",
-          "uid" : "48dbdeefc73689b8",
+          "uid" : "8f6392de3bb4c477",
           "parentUid" : "af14fd841ddd94393f1d5681a0929004",
           "status" : "passed",
           "time" : {
-            "start" : 1655200039522,
-            "stop" : 1655200039663,
-            "duration" : 141
+            "start" : 1655881660451,
+            "stop" : 1655881660598,
+            "duration" : 147
           },
           "flaky" : false,
           "newFailed" : false,
@@ -97,13 +97,13 @@
           "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/position/list?current=1&size=10&keyWord=99', 'detail': '关键词查询列表', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'create_name': {'other_value': None, 'jsonpath': '$.data.records[0].createName', 'type': '==', 'value': '管理员', 'AssertType': None}}}" ]
         }, {
           "name" : "渠道查询列表",
-          "uid" : "f95acfadf6773be3",
+          "uid" : "20419cf5e18f41fd",
           "parentUid" : "af14fd841ddd94393f1d5681a0929004",
           "status" : "passed",
           "time" : {
-            "start" : 1655200039667,
-            "stop" : 1655200039798,
-            "duration" : 131
+            "start" : 1655881660602,
+            "stop" : 1655881660738,
+            "duration" : 136
           },
           "flaky" : false,
           "newFailed" : false,
@@ -114,13 +114,13 @@
           "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/position/list?current=1&size=10&keyWord=&channel=merach_app', 'detail': '渠道查询列表', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'create_name': {'other_value': None, 'jsonpath': '$.data.records[0].createName', 'type': '==', 'value': '管理员', 'AssertType': None}}}" ]
         }, {
           "name" : "关键字渠道查询列表",
-          "uid" : "9fdba4a495b8eaa8",
+          "uid" : "b6eac5d566ba8684",
           "parentUid" : "af14fd841ddd94393f1d5681a0929004",
           "status" : "passed",
           "time" : {
-            "start" : 1655200039802,
-            "stop" : 1655200039962,
-            "duration" : 160
+            "start" : 1655881660743,
+            "stop" : 1655881660856,
+            "duration" : 113
           },
           "flaky" : false,
           "newFailed" : false,
@@ -131,13 +131,13 @@
           "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/position/list?current=1&size=10&keyWord=99&channel=merach_app_external', 'detail': '关键字渠道查询列表', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'create_name': {'other_value': None, 'jsonpath': '$.data.records[0].createName', 'type': '==', 'value': '管理员', 'AssertType': None}}}" ]
         }, {
           "name" : "推荐位删除",
-          "uid" : "1d8d40cd2253a6cc",
+          "uid" : "b04d8728d5cef232",
           "parentUid" : "af14fd841ddd94393f1d5681a0929004",
           "status" : "passed",
           "time" : {
-            "start" : 1655200039966,
-            "stop" : 1655200040154,
-            "duration" : 188
+            "start" : 1655881660860,
+            "stop" : 1655881661037,
+            "duration" : 177
           },
           "flaky" : false,
           "newFailed" : false,
@@ -152,13 +152,13 @@
         "name" : "推荐位新增",
         "children" : [ {
           "name" : "正常创建推荐位",
-          "uid" : "e8fd0ed33c117703",
+          "uid" : "6c47fef3deb60229",
           "parentUid" : "40184f79b0e4ed0341596b1cc524dc9f",
           "status" : "passed",
           "time" : {
-            "start" : 1655200040223,
-            "stop" : 1655200040503,
-            "duration" : 280
+            "start" : 1655881661165,
+            "stop" : 1655881661538,
+            "duration" : 373
           },
           "flaky" : false,
           "newFailed" : false,
@@ -166,16 +166,16 @@
           "newBroken" : false,
           "retriesCount" : 0,
           "retriesStatusChange" : false,
-          "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/position', 'detail': '正常创建推荐位', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'channel': 'merach_app', 'diagramUrl': 'https://static.merach.com/other/20220610/a16ba5b2a83e4598bfd19c6e495954ef_700x700.jpg', 'layout': 'single_seq', 'positionCode': '123123', 'positionName': '123123', 'remark': ''}, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': [\"SELECT position_name FROM advert_position_info WHERE position_code='123123'\"], 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'position_name': {'other_value': '123123', 'jsonpath': None, 'type': '==', 'value': '$.position_name', 'AssertType': 'SQL'}}}" ]
+          "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/position', 'detail': '正常创建推荐位', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'channel': 'merach_app', 'diagramUrl': 'https://static.merach.com/other/20220610/a16ba5b2a83e4598bfd19c6e495954ef_700x700.jpg', 'layout': 'single_seq', 'positionCode': '123123', 'positionName': '123123', 'remark': ''}, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': [\"SELECT position_name FROM advert_position_info WHERE position_code='123123' and is_delete=0\"], 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'position_name': {'other_value': '123123', 'jsonpath': None, 'type': '==', 'value': '$.position_name', 'AssertType': 'SQL'}}}" ]
         }, {
           "name" : "创建推荐位唯一码重复",
-          "uid" : "175cbcf240899f85",
+          "uid" : "59b17122c41d5202",
           "parentUid" : "40184f79b0e4ed0341596b1cc524dc9f",
           "status" : "passed",
           "time" : {
-            "start" : 1655200040532,
-            "stop" : 1655200040680,
-            "duration" : 148
+            "start" : 1655881661543,
+            "stop" : 1655881661796,
+            "duration" : 253
           },
           "flaky" : false,
           "newFailed" : false,
@@ -186,13 +186,13 @@
           "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/position', 'detail': '创建推荐位唯一码重复', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'channel': 'merach_app', 'diagramUrl': 'https://static.merach.com/other/20220610/a16ba5b2a83e4598bfd19c6e495954ef_700x700.jpg', 'layout': 'single_seq', 'positionCode': 'ssxx01', 'positionName': '1231234', 'remark': '123123'}, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 501, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': '该唯一码已经使用，请更换后保存', 'AssertType': None}}}" ]
         }, {
           "name" : "创建推荐位名称重复",
-          "uid" : "2ef50fd48a618a89",
+          "uid" : "9651b3956974a785",
           "parentUid" : "40184f79b0e4ed0341596b1cc524dc9f",
           "status" : "passed",
           "time" : {
-            "start" : 1655200040684,
-            "stop" : 1655200040886,
-            "duration" : 202
+            "start" : 1655881661800,
+            "stop" : 1655881662032,
+            "duration" : 232
           },
           "flaky" : false,
           "newFailed" : false,
@@ -207,13 +207,13 @@
         "name" : "推荐位编辑",
         "children" : [ {
           "name" : "正常编辑推荐位名称",
-          "uid" : "783d0c0520ec90dc",
+          "uid" : "eb2d211d920399d8",
           "parentUid" : "ecfcd2c8e4d3a094bd8b13723e4767e7",
           "status" : "passed",
           "time" : {
-            "start" : 1655200041050,
-            "stop" : 1655200041265,
-            "duration" : 215
+            "start" : 1655881662258,
+            "stop" : 1655881662664,
+            "duration" : 406
           },
           "flaky" : false,
           "newFailed" : false,
@@ -224,13 +224,13 @@
           "parameters" : [ "{'method': 'PUT', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/position', 'detail': '正常编辑推荐位名称', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'channel': 'merach_app', 'diagramUrl': 'https://static.merach.com/other/20220606/HjS/zbkwL5c6TQfZVXr86A==_512x512.jpg', 'id': '14', 'layout': 'single_seq', 'positionCode': 'ssxx01', 'positionName': '上上下下1', 'remark': ''}, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': ['SELECT position_name FROM advert_position_info WHERE id=14'], 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'position_name': {'other_value': '上上下下1', 'jsonpath': None, 'type': '==', 'value': '$.position_name', 'AssertType': 'SQL'}}}" ]
         }, {
           "name" : "编辑推荐位名称重复",
-          "uid" : "789b769d52e730",
+          "uid" : "a3b431a7c204ee5e",
           "parentUid" : "ecfcd2c8e4d3a094bd8b13723e4767e7",
           "status" : "passed",
           "time" : {
-            "start" : 1655200041269,
-            "stop" : 1655200041483,
-            "duration" : 214
+            "start" : 1655881662668,
+            "stop" : 1655881662904,
+            "duration" : 236
           },
           "flaky" : false,
           "newFailed" : false,
@@ -241,13 +241,13 @@
           "parameters" : [ "{'method': 'PUT', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/position', 'detail': '编辑推荐位名称重复', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'channel': 'merach_app', 'diagramUrl': 'https://static.merach.com/other/20220606/HjS/zbkwL5c6TQfZVXr86A==_512x512.jpg', 'id': '14', 'layout': 'single_seq', 'positionCode': 'ssxx01', 'positionName': 'BABA', 'remark': ''}, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 501, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': '该名称已经使用，请更换后保存', 'AssertType': None}}}" ]
         }, {
           "name" : "编辑推荐位渠道",
-          "uid" : "9ef98a2754bb0536",
+          "uid" : "88303d5483a5b8e7",
           "parentUid" : "ecfcd2c8e4d3a094bd8b13723e4767e7",
           "status" : "passed",
           "time" : {
-            "start" : 1655200041486,
-            "stop" : 1655200041666,
-            "duration" : 180
+            "start" : 1655881662909,
+            "stop" : 1655881663139,
+            "duration" : 230
           },
           "flaky" : false,
           "newFailed" : false,
@@ -258,8 +258,317 @@
           "parameters" : [ "{'method': 'PUT', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/position', 'detail': '编辑推荐位渠道', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'channel': 'merach_app', 'diagramUrl': 'https://static.merach.com/other/20220606/HjS/zbkwL5c6TQfZVXr86A==_512x512.jpg', 'id': '17', 'layout': 'single_seq', 'positionCode': 'WYSS30', 'positionName': '我有30条命', 'remark': ''}, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
         } ],
         "uid" : "ecfcd2c8e4d3a094bd8b13723e4767e7"
+      }, {
+        "name" : "推荐位内容增删",
+        "children" : [ {
+          "name" : "推荐位内容正常创建",
+          "uid" : "1351f27c92f09ec6",
+          "parentUid" : "0493d3d918183918e45e3a09864ef853",
+          "status" : "failed",
+          "time" : {
+            "start" : 1655881663400,
+            "stop" : 1655881663650,
+            "duration" : 250
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert', 'detail': '推荐位内容正常创建', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'beginTime': '2022-06-20 14:30:15', 'content': '自动化测试自动化测试', 'contentType': 'app_link', 'endTime': '2023-06-30 14:30:26', 'image': 'https://static.merach.com/other/20220621/d2f7aab4d14344b097ec603b14a53815_690x690.jpg', 'isVip': 0, 'positionInfoId': '19', 'remark': '自动化测试', 'seq': 999, 'tags': ['16'], 'title': '自动化测试数据'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
+        }, {
+          "name" : "推荐位内容创建标题重复",
+          "uid" : "ed8119b8e0f335a4",
+          "parentUid" : "0493d3d918183918e45e3a09864ef853",
+          "status" : "failed",
+          "time" : {
+            "start" : 1655881663732,
+            "stop" : 1655881664013,
+            "duration" : 281
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert', 'detail': '推荐位内容创建标题重复', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'beginTime': '2022-06-18 14:30:15', 'content': '自动化测试', 'contentType': 'app_link', 'endTime': '2023-06-18 14:30:26', 'image': 'https://static.merach.com/other/20220621/d2f7aab4d14344b097ec603b14a53815_690x690.jpg', 'isVip': 0, 'positionInfoId': '19', 'remark': '自动化测试1', 'seq': 888, 'tags': ['16'], 'title': '自动化测试数据'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 501, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': '该标题已经使用，请更换后保存', 'AssertType': None}}}" ]
+        }, {
+          "name" : "推荐位内容删除",
+          "uid" : "521cc88454fffc9c",
+          "parentUid" : "0493d3d918183918e45e3a09864ef853",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881664022,
+            "stop" : 1655881664286,
+            "duration" : 264
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'DELETE', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/59', 'detail': '推荐位内容删除', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': None, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
+        } ],
+        "uid" : "0493d3d918183918e45e3a09864ef853"
+      }, {
+        "name" : "推荐位配置",
+        "children" : [ {
+          "name" : "查询推荐位配置列表",
+          "uid" : "61b1dd4f77b46efe",
+          "parentUid" : "72e1bfb6488719a0f81654a9cf716b10",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881664600,
+            "stop" : 1655881664837,
+            "duration" : 237
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/list?positionInfoId=20', 'detail': '查询推荐位配置列表', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': None, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
+        }, {
+          "name" : "推荐位内容下架",
+          "uid" : "88c066094eb8ba60",
+          "parentUid" : "72e1bfb6488719a0f81654a9cf716b10",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881664842,
+            "stop" : 1655881665043,
+            "duration" : 201
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'PUT', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert/status', 'detail': '推荐位内容下架', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'advertStatus': 0, 'id': '55'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
+        }, {
+          "name" : "推荐位内容正常编辑",
+          "uid" : "50325540e7377fd3",
+          "parentUid" : "72e1bfb6488719a0f81654a9cf716b10",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881665048,
+            "stop" : 1655881665319,
+            "duration" : 271
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'PUT', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert', 'detail': '推荐位内容正常编辑', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'advertStatus': 2, 'beginTime': '2022-06-08 14:20:00', 'content': '红红火火恍恍惚惚', 'contentType': 'h5_app', 'createId': '1', 'createTime': '2022-06-08 14:10:46', 'endTime': '2023-06-30 14:10:27', 'extParams': '', 'id': '55', 'image': 'https://static.merach.com/other/20220608/9a5c5226381d4540a59a31e035537717_720x1280.JPG', 'isDelete': 0, 'isVip': 2, 'positionInfoId': '20', 'remark': '自动化测试', 'seq': 3, 'tags': [], 'title': '测试上架时间'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
+        }, {
+          "name" : "内容编辑标题重复",
+          "uid" : "8e0dd4d5d3f32a12",
+          "parentUid" : "72e1bfb6488719a0f81654a9cf716b10",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881665322,
+            "stop" : 1655881665569,
+            "duration" : 247
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'PUT', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert', 'detail': '内容编辑标题重复', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'advertStatus': 2, 'beginTime': '2022-06-08 14:20:00', 'content': '红红火火恍恍惚惚', 'contentType': 'h5_app', 'createId': '1', 'createTime': '2022-06-08 14:10:46', 'endTime': '2023-06-30 14:10:27', 'extParams': '', 'id': '52', 'image': 'https://static.merach.com/other/20220608/9a5c5226381d4540a59a31e035537717_720x1280.JPG', 'isDelete': 0, 'isVip': 2, 'positionInfoId': '20', 'remark': '自动化测试', 'seq': 3, 'tags': [], 'title': '1111'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 501, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': '该标题已经使用，请更换后保存', 'AssertType': None}}}" ]
+        } ],
+        "uid" : "72e1bfb6488719a0f81654a9cf716b10"
       } ],
       "uid" : "0de9c0675eb6d399c930f834a1591bf4"
+    }, {
+      "name" : "标签管理",
+      "children" : [ {
+        "name" : "标签增删",
+        "children" : [ {
+          "name" : "标签新增",
+          "uid" : "3f8f0667085aa57b",
+          "parentUid" : "593d91ede4c234d22872b7061d8d179d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881665824,
+            "stop" : 1655881666264,
+            "duration" : 440
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/user/tag', 'detail': '标签新增', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'seq': 1, 'tagCategoryId': '1', 'tagCode': 'zdhcs01', 'tagName': '自动化测试标签', 'tagStatus': 1}, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': [\"SELECT tag_name FROM tag WHERE tag_name='自动化测试标签'\"], 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': '自动化测试标签', 'jsonpath': None, 'type': '==', 'value': '$.tag_name', 'AssertType': 'SQL'}}}" ]
+        }, {
+          "name" : "标签创建名称重复",
+          "uid" : "63f09a1b5a1b7a52",
+          "parentUid" : "593d91ede4c234d22872b7061d8d179d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881666268,
+            "stop" : 1655881666515,
+            "duration" : 247
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/user/tag', 'detail': '标签创建名称重复', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'seq': 1, 'tagCategoryId': '1', 'tagCode': 'zdhcs01', 'tagName': '自动化测试标签', 'tagStatus': 1}, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 501, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': '名称已经使用，请更换后保存', 'AssertType': None}}}" ]
+        }, {
+          "name" : "标签创建唯一码重复",
+          "uid" : "6704168bbdec53c8",
+          "parentUid" : "593d91ede4c234d22872b7061d8d179d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881666519,
+            "stop" : 1655881666787,
+            "duration" : 268
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/user/tag', 'detail': '标签创建唯一码重复', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'seq': 1, 'tagCategoryId': '1', 'tagCode': 'zdhcs01', 'tagName': '自动化测试标签1', 'tagStatus': 1}, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 501, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': '唯一码已经使用，请更换后保存', 'AssertType': None}}}" ]
+        }, {
+          "name" : "标签删除",
+          "uid" : "1bde7cef71fb9605",
+          "parentUid" : "593d91ede4c234d22872b7061d8d179d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881666791,
+            "stop" : 1655881667017,
+            "duration" : 226
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'DELETE', 'is_run': True, 'url': 'https://testapi.merach.com/admin/user/tag/18', 'detail': '标签删除', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
+        } ],
+        "uid" : "593d91ede4c234d22872b7061d8d179d"
+      }, {
+        "name" : "标签改查",
+        "children" : [ {
+          "name" : "标签正常编辑",
+          "uid" : "50ffccc281cecd9",
+          "parentUid" : "deb7bd672a38e3b3c5e8e388d8bacdc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881667346,
+            "stop" : 1655881667772,
+            "duration" : 426
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'PUT', 'is_run': True, 'url': 'https://testapi.merach.com/admin/user/tag', 'detail': '标签正常编辑', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'id': '14', 'seq': 567, 'tagCategoryId': '1', 'tagCode': 'nnnn', 'tagName': '自动化编辑数据1', 'tagStatus': 1}, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': ['SELECT tag_name FROM tag WHERE id=14'], 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': '自动化编辑数据1', 'jsonpath': None, 'type': '==', 'value': '$.tag_name', 'AssertType': 'SQL'}}}" ]
+        }, {
+          "name" : "标签编辑名称重复",
+          "uid" : "63377f7bfb871a4",
+          "parentUid" : "deb7bd672a38e3b3c5e8e388d8bacdc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881667776,
+            "stop" : 1655881668038,
+            "duration" : 262
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'PUT', 'is_run': True, 'url': 'https://testapi.merach.com/admin/user/tag', 'detail': '标签编辑名称重复', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'id': '14', 'seq': 567, 'tagCategoryId': '1', 'tagCode': 'nnnn', 'tagName': '自动化删除数据', 'tagStatus': 1}, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 501, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': '该名称已经使用，请更换后保存', 'AssertType': None}}}" ]
+        }, {
+          "name" : "标签列表查询",
+          "uid" : "2911a4358bda9820",
+          "parentUid" : "deb7bd672a38e3b3c5e8e388d8bacdc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881668042,
+            "stop" : 1655881668367,
+            "duration" : 325
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/admin/user/tag/list?current=1&size=10', 'detail': '标签列表查询', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
+        }, {
+          "name" : "标签列表分类查询",
+          "uid" : "85d09d878f6fde2a",
+          "parentUid" : "deb7bd672a38e3b3c5e8e388d8bacdc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881668370,
+            "stop" : 1655881668627,
+            "duration" : 257
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/admin/user/tag/list?current=1&size=10&tagCategoryId=1', 'detail': '标签列表分类查询', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
+        }, {
+          "name" : "标签列表状态查询",
+          "uid" : "fe497f379c867a9",
+          "parentUid" : "deb7bd672a38e3b3c5e8e388d8bacdc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881668631,
+            "stop" : 1655881668950,
+            "duration" : 319
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/admin/user/tag/list?current=1&size=10&tagStatus=1', 'detail': '标签列表状态查询', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
+        }, {
+          "name" : "标签列表关键词查询",
+          "uid" : "d507884a5ba82c10",
+          "parentUid" : "deb7bd672a38e3b3c5e8e388d8bacdc7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655881668954,
+            "stop" : 1655881669174,
+            "duration" : 220
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'method': 'GET', 'is_run': True, 'url': 'https://testapi.merach.com/admin/user/tag/list?current=1&size=10&keyWord=123', 'detail': '标签列表关键词查询', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
+        } ],
+        "uid" : "deb7bd672a38e3b3c5e8e388d8bacdc7"
+      } ],
+      "uid" : "5d5378b39cbc75d7a87b88e4d1059161"
     } ],
     "uid" : "820fb2baf57ee5720db19cd35d50a92d"
   } ]

@@ -1,5 +1,47 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "推荐位内容正常创建",
+        "uid" : "1351f27c92f09ec6",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655881663400,
+          "stop" : 1655881663650,
+          "duration" : 250
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert', 'detail': '推荐位内容正常创建', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'beginTime': '2022-06-20 14:30:15', 'content': '自动化测试自动化测试', 'contentType': 'app_link', 'endTime': '2023-06-30 14:30:26', 'image': 'https://static.merach.com/other/20220621/d2f7aab4d14344b097ec603b14a53815_690x690.jpg', 'isVip': 0, 'positionInfoId': '19', 'remark': '自动化测试', 'seq': 999, 'tags': ['16'], 'title': '自动化测试数据'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 200, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': 'SUCCESS', 'AssertType': None}}}" ]
+      }, {
+        "name" : "推荐位内容创建标题重复",
+        "uid" : "ed8119b8e0f335a4",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655881663732,
+          "stop" : 1655881664013,
+          "duration" : 281
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'method': 'POST', 'is_run': True, 'url': 'https://testapi.merach.com/admin/advert', 'detail': '推荐位内容创建标题重复', 'headers': {'Content-Type': 'application/json;charset=UTF-8', 'Authorization': 'work_login_init_houtai'}, 'requestType': 'JSON', 'data': {'beginTime': '2022-06-18 14:30:15', 'content': '自动化测试', 'contentType': 'app_link', 'endTime': '2023-06-18 14:30:26', 'image': 'https://static.merach.com/other/20220621/d2f7aab4d14344b097ec603b14a53815_690x690.jpg', 'isVip': 0, 'positionInfoId': '19', 'remark': '自动化测试1', 'seq': 888, 'tags': ['16'], 'title': '自动化测试数据'}, 'dependence_case': True, 'dependence_case_data': [{'case_id': None, 'dependent_data': [{'dependent_type': None, 'jsonpath': None, 'replace_key': None}, {'dependent_type': None, 'jsonpath': None, 'replace_key': None}]}], 'sql': None, 'assert': {'code': {'other_value': None, 'jsonpath': '$.status', 'type': '==', 'value': 501, 'AssertType': None}, 'message': {'other_value': None, 'jsonpath': '$.message', 'type': '==', 'value': '该标题已经使用，请更换后保存', 'AssertType': None}}}" ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

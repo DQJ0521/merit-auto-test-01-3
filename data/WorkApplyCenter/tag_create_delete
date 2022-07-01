@@ -139,6 +139,186 @@ tag_create_03:
       AssertType:
   sql:
 
+tag_create_04:
+  host: ${{host}}
+  url: /admin/user/tag
+  method: post
+  detail: 标签创建名称为空
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    seq: 1
+    tagCategoryId: "1"
+    tagCode: "zdhcs01"
+    tagName: ""
+    tagStatus: 1
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 400
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "名称为必填项"
+      AssertType:
+  sql:
+
+tag_create_05:
+  host: ${{host}}
+  url: /admin/user/tag
+  method: post
+  detail: 标签创建唯一码为空
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    seq: 1
+    tagCategoryId: "1"
+    tagCode: ""
+    tagName: "112233"
+    tagStatus: 1
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 400
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "唯一码不能为空"
+      AssertType:
+  sql:
+
+tag_create_06:
+  host: ${{host}}
+  url: /admin/user/tag
+  method: post
+  detail: 标签创建状态码为空
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    seq: 1
+    tagCategoryId: "1"
+    tagCode: "123123"
+    tagName: "112233"
+    tagStatus: ""
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 400
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "状态不能为空"
+      AssertType:
+  sql:
+
+tag_create_07:
+  host: ${{host}}
+  url: /admin/user/tag
+  method: post
+  detail: 标签创建标签分类码为空
+  headers:
+    Content-Type: application/json;charset=UTF-8
+    Authorization: work_login_init_houtai
+  # 请求的数据，是 params 还是 json、或者file
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run: true
+  data:
+    seq: 1
+    tagCategoryId: ""
+    tagCode: "12233423"
+    tagName: "112233"
+    tagStatus: "1"
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: false
+  # 依赖的数据
+  dependence_case_data:
+    - case_id:
+      dependent_data:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+        - dependent_type:
+          jsonpath:
+          replace_key:
+  assert:
+    code:
+      other_value:
+      jsonpath: $.status
+      type: ==
+      value: 501
+      AssertType:
+    message:
+      other_value:
+      jsonpath: $.message
+      type: ==
+      value: "你要新增的的标签，标签分类id不存在"
+      AssertType:
+  sql:
+
 tag_delete_01:
   host: ${{host}}
   url: /admin/user/tag/18

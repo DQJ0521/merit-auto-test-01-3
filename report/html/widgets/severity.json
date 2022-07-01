@@ -1,130 +1,300 @@
 [ {
-  "uid" : "19ed5f4627b3d2a8",
-  "name" : "查询收藏课程列表",
+  "uid" : "fe497f379c867a9",
+  "name" : "标签列表状态查询",
   "time" : {
-    "start" : 1655200041931,
-    "stop" : 1655200042166,
-    "duration" : 235
+    "start" : 1655881668631,
+    "stop" : 1655881668950,
+    "duration" : 319
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9ef98a2754bb0536",
-  "name" : "编辑推荐位渠道",
+  "uid" : "61b1dd4f77b46efe",
+  "name" : "查询推荐位配置列表",
   "time" : {
-    "start" : 1655200041486,
-    "stop" : 1655200041666,
-    "duration" : 180
+    "start" : 1655881664600,
+    "stop" : 1655881664837,
+    "duration" : 237
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "783d0c0520ec90dc",
+  "uid" : "1bde7cef71fb9605",
+  "name" : "标签删除",
+  "time" : {
+    "start" : 1655881666791,
+    "stop" : 1655881667017,
+    "duration" : 226
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6704168bbdec53c8",
+  "name" : "标签创建唯一码重复",
+  "time" : {
+    "start" : 1655881666519,
+    "stop" : 1655881666787,
+    "duration" : 268
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85d09d878f6fde2a",
+  "name" : "标签列表分类查询",
+  "time" : {
+    "start" : 1655881668370,
+    "stop" : 1655881668627,
+    "duration" : 257
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88c066094eb8ba60",
+  "name" : "推荐位内容下架",
+  "time" : {
+    "start" : 1655881664842,
+    "stop" : 1655881665043,
+    "duration" : 201
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b04d8728d5cef232",
+  "name" : "推荐位删除",
+  "time" : {
+    "start" : 1655881660860,
+    "stop" : 1655881661037,
+    "duration" : 177
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63377f7bfb871a4",
+  "name" : "标签编辑名称重复",
+  "time" : {
+    "start" : 1655881667776,
+    "stop" : 1655881668038,
+    "duration" : 262
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50325540e7377fd3",
+  "name" : "推荐位内容正常编辑",
+  "time" : {
+    "start" : 1655881665048,
+    "stop" : 1655881665319,
+    "duration" : 271
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "59b17122c41d5202",
+  "name" : "创建推荐位唯一码重复",
+  "time" : {
+    "start" : 1655881661543,
+    "stop" : 1655881661796,
+    "duration" : 253
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50ffccc281cecd9",
+  "name" : "标签正常编辑",
+  "time" : {
+    "start" : 1655881667346,
+    "stop" : 1655881667772,
+    "duration" : 426
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1351f27c92f09ec6",
+  "name" : "推荐位内容正常创建",
+  "time" : {
+    "start" : 1655881663400,
+    "stop" : 1655881663650,
+    "duration" : 250
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "20419cf5e18f41fd",
+  "name" : "渠道查询列表",
+  "time" : {
+    "start" : 1655881660602,
+    "stop" : 1655881660738,
+    "duration" : 136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63f09a1b5a1b7a52",
+  "name" : "标签创建名称重复",
+  "time" : {
+    "start" : 1655881666268,
+    "stop" : 1655881666515,
+    "duration" : 247
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb2d211d920399d8",
   "name" : "正常编辑推荐位名称",
   "time" : {
-    "start" : 1655200041050,
-    "stop" : 1655200041265,
-    "duration" : 215
+    "start" : 1655881662258,
+    "stop" : 1655881662664,
+    "duration" : 406
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d5d9a839921a6652",
+  "uid" : "80aa0a8198a5e45",
+  "name" : "查询收藏课程列表",
+  "time" : {
+    "start" : 1655881665574,
+    "stop" : 1655881665820,
+    "duration" : 246
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6c47fef3deb60229",
+  "name" : "正常创建推荐位",
+  "time" : {
+    "start" : 1655881661165,
+    "stop" : 1655881661538,
+    "duration" : 373
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f6392de3bb4c477",
+  "name" : "关键词查询列表",
+  "time" : {
+    "start" : 1655881660451,
+    "stop" : 1655881660598,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88303d5483a5b8e7",
+  "name" : "编辑推荐位渠道",
+  "time" : {
+    "start" : 1655881662909,
+    "stop" : 1655881663139,
+    "duration" : 230
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9651b3956974a785",
+  "name" : "创建推荐位名称重复",
+  "time" : {
+    "start" : 1655881661800,
+    "stop" : 1655881662032,
+    "duration" : 232
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e0dd4d5d3f32a12",
+  "name" : "内容编辑标题重复",
+  "time" : {
+    "start" : 1655881665322,
+    "stop" : 1655881665569,
+    "duration" : 247
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6eac5d566ba8684",
+  "name" : "关键字渠道查询列表",
+  "time" : {
+    "start" : 1655881660743,
+    "stop" : 1655881660856,
+    "duration" : 113
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed8119b8e0f335a4",
+  "name" : "推荐位内容创建标题重复",
+  "time" : {
+    "start" : 1655881663732,
+    "stop" : 1655881664013,
+    "duration" : 281
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e76cb0941b161383",
   "name" : "test_login[正常登录]",
   "time" : {
-    "start" : 1655200038690,
-    "stop" : 1655200038690,
+    "start" : 1655881659662,
+    "stop" : 1655881659662,
     "duration" : 0
   },
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "60fe2bc3b4ceea17",
-  "name" : "推荐位列表查询",
+  "uid" : "d507884a5ba82c10",
+  "name" : "标签列表关键词查询",
   "time" : {
-    "start" : 1655200039299,
-    "stop" : 1655200039518,
-    "duration" : 219
+    "start" : 1655881668954,
+    "stop" : 1655881669174,
+    "duration" : 220
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2ef50fd48a618a89",
-  "name" : "创建推荐位名称重复",
-  "time" : {
-    "start" : 1655200040684,
-    "stop" : 1655200040886,
-    "duration" : 202
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "175cbcf240899f85",
-  "name" : "创建推荐位唯一码重复",
-  "time" : {
-    "start" : 1655200040532,
-    "stop" : 1655200040680,
-    "duration" : 148
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "789b769d52e730",
+  "uid" : "a3b431a7c204ee5e",
   "name" : "编辑推荐位名称重复",
   "time" : {
-    "start" : 1655200041269,
-    "stop" : 1655200041483,
-    "duration" : 214
+    "start" : 1655881662668,
+    "stop" : 1655881662904,
+    "duration" : 236
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f95acfadf6773be3",
-  "name" : "渠道查询列表",
+  "uid" : "2911a4358bda9820",
+  "name" : "标签列表查询",
   "time" : {
-    "start" : 1655200039667,
-    "stop" : 1655200039798,
-    "duration" : 131
+    "start" : 1655881668042,
+    "stop" : 1655881668367,
+    "duration" : 325
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1d8d40cd2253a6cc",
-  "name" : "推荐位删除",
+  "uid" : "2b56b4d8a1923665",
+  "name" : "推荐位列表查询",
   "time" : {
-    "start" : 1655200039966,
-    "stop" : 1655200040154,
-    "duration" : 188
+    "start" : 1655881660210,
+    "stop" : 1655881660447,
+    "duration" : 237
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e8fd0ed33c117703",
-  "name" : "正常创建推荐位",
+  "uid" : "3f8f0667085aa57b",
+  "name" : "标签新增",
   "time" : {
-    "start" : 1655200040223,
-    "stop" : 1655200040503,
-    "duration" : 280
+    "start" : 1655881665824,
+    "stop" : 1655881666264,
+    "duration" : 440
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "48dbdeefc73689b8",
-  "name" : "关键词查询列表",
+  "uid" : "521cc88454fffc9c",
+  "name" : "推荐位内容删除",
   "time" : {
-    "start" : 1655200039522,
-    "stop" : 1655200039663,
-    "duration" : 141
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9fdba4a495b8eaa8",
-  "name" : "关键字渠道查询列表",
-  "time" : {
-    "start" : 1655200039802,
-    "stop" : 1655200039962,
-    "duration" : 160
+    "start" : 1655881664022,
+    "stop" : 1655881664286,
+    "duration" : 264
   },
   "status" : "passed",
   "severity" : "normal"
