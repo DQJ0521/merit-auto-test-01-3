@@ -174,7 +174,7 @@ tag_create_04:
       other_value:
       jsonpath: $.status
       type: ==
-      value: 400
+      value: 501
       AssertType:
     message:
       other_value:
@@ -219,7 +219,7 @@ tag_create_05:
       other_value:
       jsonpath: $.status
       type: ==
-      value: 400
+      value: 501
       AssertType:
     message:
       other_value:
@@ -264,7 +264,7 @@ tag_create_06:
       other_value:
       jsonpath: $.status
       type: ==
-      value: 400
+      value: 501
       AssertType:
     message:
       other_value:
