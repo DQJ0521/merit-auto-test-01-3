@@ -101,7 +101,7 @@ class DingTalkSendMsg(object):
                f"执行人: {tester_name}\n\n>执行结果: {self.Process.pass_rate()}% \n\n>总用例数: {self.Process.total_count()} " \
                f"\n\n>成功用例数: {self.Process.pass_rate()}" \
                f" \n\n>失败用例数: {self.Process.failed_count()} \n\n>跳过用例数: {self.Process.skipped_count()}\n" \
-               f" > ###### 测试报告 [详情](http://{get_host_ip()}:9999/index.html) \n"
+               f" > ###### 测试报告 [详情](http://merit-auto.merach.com/index.html) \n"
         DingTalkSendMsg().send_markdown(
             title="【merit自动化通知】",
             msg=text,
