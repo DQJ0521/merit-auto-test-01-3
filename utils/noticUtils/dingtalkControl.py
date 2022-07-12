@@ -105,7 +105,7 @@ class DingTalkSendMsg(object):
         DingTalkSendMsg().send_markdown(
             title="【merit自动化通知】",
             msg=text,
-            mobiles=[17721416811]
+            mobiles=None
         )
 
 
